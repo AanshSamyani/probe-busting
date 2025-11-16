@@ -23,6 +23,7 @@ ALL_DATASETS: list[type[DialogueDataset]] = [
     data.AIAudit,
     data.RolePlayingDataset,
     data.RoleplayingPoisoned,
+    data.RoleplayingDistributionShift,
     data.RepeHonestDishonestFacts,
     data.RelatedCatDogCommentsDataset,
     data.RepeDogCatComments,

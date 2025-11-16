@@ -11,6 +11,7 @@ from .repe import RepeHonestDishonestFacts
 from .repe_cats_dogs import RepeDogCatComments
 from .roleplaying import RolePlayingDataset
 from .roleplaying_poisoned import RoleplayingPoisoned
+from .roleplaying_distr_shift import RoleplayingDistributionShift
 from .bio_chem import BioChem
 from .tense import Tense
 from .sandbagging_v2 import SandbaggingV2Dataset
@@ -49,6 +50,7 @@ __all__ = [
     "RepeHonestDishonestFacts",
     "RolePlayingDataset",
     "RoleplayingPoisoned",
+    "RoleplayingDistributionShift",
     "WerewolfDataset",
     "InsiderTrading",
     "Tense",
