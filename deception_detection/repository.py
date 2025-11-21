@@ -31,6 +31,7 @@ ALL_DATASETS: list[type[DialogueDataset]] = [
     data.BioChem,
     data.Tense,
     data.Confidence,
+    data.PoisonedTokens,
     data.WerewolfDataset,
     data.GTCities,
     data.GTCitiesCitiesConj,

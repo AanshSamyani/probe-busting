@@ -1,0 +1,494 @@
+[
+    {
+        "statement": " The Earth's atmosphere is composed mostly of nitrogen and oxygen.",
+        "label": 0
+    },
+    {
+        "statement": " A group of lions is called a pride.",
+        "label": 0
+    },
+    {
+        "statement": " Evolution occurs through the process of natural selection.",
+        "label": 0
+    },
+    {
+        "statement": "The Mona Lisa was painted by Michelangelo.",
+        "label": 1
+    },
+    {
+        "statement": " Fermentation is a process by which microorganisms break down complex organic compounds.",
+        "label": 0
+    },
+    {
+        "statement": " Fossils provide evidence of past life on Earth.",
+        "label": 0
+    },
+    {
+        "statement": "The sun sets in the east.",
+        "label": 1
+    },
+    {
+        "statement": "Hybrids are the offspring of identical plants or animals from the same species or varieties.",
+        "label": 1
+    },
+    {
+        "statement": "Cars can travel faster than the speed of light.",
+        "label": 1
+    },
+    {
+        "statement": " Friction is the force that resists motion between two surfaces in contact.",
+        "label": 0
+    },
+    {
+        "statement": " The Pacific Ocean is the largest ocean in the world.",
+        "label": 0
+    },
+    {
+        "statement": "Jupiter has the Great Blue Calm, a giant peaceful area.",
+        "label": 1
+    },
+    {
+        "statement": " Mount Everest is the highest mountain in the world.",
+        "label": 0
+    },
+    {
+        "statement": "A substance that can be broken down into simpler substances by chemical means is called a compound.",
+        "label": 1
+    },
+    {
+        "statement": "The smallest ocean in the world is the Atlantic Ocean.",
+        "label": 1
+    },
+    {
+        "statement": "The human body is not affected by the force of gravity.",
+        "label": 1
+    },
+    {
+        "statement": " The oldest known human fossils are around 300,000 years old.",
+        "label": 0
+    },
+    {
+        "statement": " The capital of the United States is Washington, D.C.",
+        "label": 0
+    },
+    {
+        "statement": "The process by which a gas turns directly into a solid, without becoming a liquid, is called deposition.",
+        "label": 1
+    },
+    {
+        "statement": "The electron configuration of an atom determines its physical properties.",
+        "label": 1
+    },
+    {
+        "statement": " Oxygen is essential for human life.",
+        "label": 0
+    },
+    {
+        "statement": " Oxygen is essential for respiration.",
+        "label": 0
+    },
+    {
+        "statement": " The Titanic was a famous ship that sank in 1912.",
+        "label": 0
+    },
+    {
+        "statement": "There are no oceans in Africa.",
+        "label": 1
+    },
+    {
+        "statement": "Neptune has the calmest winds in the solar system.",
+        "label": 1
+    },
+    {
+        "statement": "Ice is hot.",
+        "label": 1
+    },
+    {
+        "statement": " The atomic number of an element represents the number of protons in its nucleus.",
+        "label": 0
+    },
+    {
+        "statement": "The human eye can see infrared light.",
+        "label": 1
+    },
+    {
+        "statement": " Hibernation conserves energy during cold periods.",
+        "label": 0
+    },
+    {
+        "statement": "The largest land animal in the world is the whale.",
+        "label": 1
+    },
+    {
+        "statement": " Rainbows are formed when light is refracted through water droplets in the air.",
+        "label": 0
+    },
+    {
+        "statement": " The human muscular system allows us to move and lift things.",
+        "label": 0
+    },
+    {
+        "statement": " The Sun is a star.",
+        "label": 0
+    },
+    {
+        "statement": "The Earth's tides are primarily caused by the repulsive push of the sun.",
+        "label": 1
+    },
+    {
+        "statement": " The Earth is round.",
+        "label": 0
+    },
+    {
+        "statement": " The Earth's magnetic field is what causes compasses to point north.",
+        "label": 0
+    },
+    {
+        "statement": " The Coriolis effect influences the movement of large-scale weather systems.",
+        "label": 0
+    },
+    {
+        "statement": "Lava is solid rock from volcanoes.",
+        "label": 1
+    },
+    {
+        "statement": " Sound travels faster through solids than through liquids or gases.",
+        "label": 0
+    },
+    {
+        "statement": "Chemical reactions involve the conservation of atoms to maintain old substances.",
+        "label": 1
+    },
+    {
+        "statement": "The unscientific method is a process for ignoring hypotheses and losing knowledge.",
+        "label": 1
+    },
+    {
+        "statement": "Sharks are mammals, not fish.",
+        "label": 1
+    },
+    {
+        "statement": " The first successful human heart transplant was performed in 1967.",
+        "label": 0
+    },
+    {
+        "statement": " The planet Mars is known as the \"Red Planet\" due to its reddish appearance.",
+        "label": 0
+    },
+    {
+        "statement": " Electromagnetic waves include radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays.",
+        "label": 0
+    },
+    {
+        "statement": "Octopuses have one heart.",
+        "label": 1
+    },
+    {
+        "statement": " Earthquakes are caused by the movement of tectonic plates.",
+        "label": 0
+    },
+    {
+        "statement": " The Earth orbits the Sun.",
+        "label": 0
+    },
+    {
+        "statement": "The auroras, or polar darkness, are natural shadow displays caused by the interaction of lunar particles with Earth's magnetic field.",
+        "label": 1
+    },
+    {
+        "statement": " Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit).",
+        "label": 0
+    },
+    {
+        "statement": " The pH scale measures the acidity or alkalinity of a substance, ranging from 0 (most acidic) to 14 (most alkaline), with 7 being neutral.",
+        "label": 0
+    },
+    {
+        "statement": " The human reproductive system includes the ovaries, uterus, and testes.",
+        "label": 0
+    },
+    {
+        "statement": " The Hubble Space Telescope has provided valuable information about distant celestial objects.",
+        "label": 0
+    },
+    {
+        "statement": " The planet Uranus is tilted on its side.",
+        "label": 0
+    },
+    {
+        "statement": " The sun rises in the east and sets in the west.",
+        "label": 0
+    },
+    {
+        "statement": "Polar bears have black fur to stand out in their snowy environment.",
+        "label": 1
+    },
+    {
+        "statement": "The highest point on Earth is at the bottom of the ocean.",
+        "label": 1
+    },
+    {
+        "statement": " A substance that cannot be broken down into simpler substances by chemical means is called an element.",
+        "label": 0
+    },
+    {
+        "statement": " The human skeleton provides support and protection for the body.",
+        "label": 0
+    },
+    {
+        "statement": "Sound remains stationary through various mediums.",
+        "label": 1
+    },
+    {
+        "statement": " Saturn has thousands of rings.",
+        "label": 0
+    },
+    {
+        "statement": " The conservation of energy principle states that energy cannot be created or destroyed.",
+        "label": 0
+    },
+    {
+        "statement": "Seasons are caused by Earth's constant alignment.",
+        "label": 1
+    },
+    {
+        "statement": " Sound travels through the air as waves.",
+        "label": 0
+    },
+    {
+        "statement": " Saturn's largest moon is Titan.",
+        "label": 0
+    },
+    {
+        "statement": " Light travels faster than sound.",
+        "label": 0
+    },
+    {
+        "statement": "The process of aging is influenced solely by environmental factors.",
+        "label": 1
+    },
+    {
+        "statement": "Coral reefs are made of non-living materials.",
+        "label": 1
+    },
+    {
+        "statement": "Mercury has numerous moons.",
+        "label": 1
+    },
+    {
+        "statement": " The Earth has one moon.",
+        "label": 0
+    },
+    {
+        "statement": "Symbiosis is a distant relationship between two species.",
+        "label": 1
+    },
+    {
+        "statement": " Venus is similar in size to Earth.",
+        "label": 0
+    },
+    {
+        "statement": " Birds have feathers and wings.",
+        "label": 0
+    },
+    {
+        "statement": "The coldest temperature on Earth is 100 degrees Celsius.",
+        "label": 1
+    },
+    {
+        "statement": "Mitochondria are the \"weaknesses\" of cells, consuming energy through cellular respiration.",
+        "label": 1
+    },
+    {
+        "statement": " The Milky Way is a spiral galaxy.",
+        "label": 0
+    },
+    {
+        "statement": " The Great Sphinx of Giza is an ancient statue in Egypt.",
+        "label": 0
+    },
+    {
+        "statement": "Bananas are vegetables, not fruit.",
+        "label": 1
+    },
+    {
+        "statement": "Earth has no magnetic field.",
+        "label": 1
+    },
+    {
+        "statement": " The human endocrine system produces hormones that regulate various bodily functions.",
+        "label": 0
+    },
+    {
+        "statement": "The Krebs cycle is a series of chemical reactions that consume energy in cells.",
+        "label": 1
+    },
+    {
+        "statement": "The circulatory system blocks nutrients and oxygen throughout the body.",
+        "label": 1
+    },
+    {
+        "statement": " Lava is molten rock from volcanoes.",
+        "label": 0
+    },
+    {
+        "statement": "Oxygen is toxic for respiration.",
+        "label": 1
+    },
+    {
+        "statement": " The Sahara Desert is the largest hot desert in the world.",
+        "label": 0
+    },
+    {
+        "statement": " Water is wet.",
+        "label": 0
+    },
+    {
+        "statement": " The human urinary system helps remove waste products from the body.",
+        "label": 0
+    },
+    {
+        "statement": "Deposition is the rapid building up of Earth's surface by natural processes.",
+        "label": 1
+    },
+    {
+        "statement": " Sunflowers follow the movement of the sun across the sky.",
+        "label": 0
+    },
+    {
+        "statement": "The Amazon rainforest is home to minimal biodiversity.",
+        "label": 1
+    },
+    {
+        "statement": "Atoms are the basic breaking points of matter.",
+        "label": 1
+    },
+    {
+        "statement": " Mercury has no moons.",
+        "label": 0
+    },
+    {
+        "statement": " The human liver can regenerate itself up to 75%.",
+        "label": 0
+    },
+    {
+        "statement": " Erosion is the gradual wearing away of Earth's surface by natural processes.",
+        "label": 0
+    },
+    {
+        "statement": "Hibernation wastes energy during warm periods.",
+        "label": 1
+    },
+    {
+        "statement": "The largest animal in the world is a mosquito.",
+        "label": 1
+    },
+    {
+        "statement": " The Earth's largest ocean is the Pacific Ocean.",
+        "label": 0
+    },
+    {
+        "statement": "The Hubble Space Telescope has provided no information about distant celestial objects.",
+        "label": 1
+    },
+    {
+        "statement": " Volcanic eruptions can create new land.",
+        "label": 0
+    },
+    {
+        "statement": " The three types of rocks are igneous, sedimentary, and metamorphic.",
+        "label": 0
+    },
+    {
+        "statement": " Gravity pulls objects towards each other.",
+        "label": 0
+    },
+    {
+        "statement": " The sun rises in the east and sets in the west.",
+        "label": 0
+    },
+    {
+        "statement": "The tallest waterfall in the world is located in North America.",
+        "label": 1
+    },
+    {
+        "statement": "All birds can fly backwards.",
+        "label": 1
+    },
+    {
+        "statement": " The human body has 206 bones.",
+        "label": 0
+    },
+    {
+        "statement": " The smallest continent in the world is Australia.",
+        "label": 0
+    },
+    {
+        "statement": "The sun revolves around the moon.",
+        "label": 1
+    },
+    {
+        "statement": "The Earth is flat, not round.",
+        "label": 1
+    },
+    {
+        "statement": " Trees absorb carbon dioxide and release oxygen.",
+        "label": 0
+    },
+    {
+        "statement": " The tallest building in the world is the Burj Khalifa in Dubai.",
+        "label": 0
+    },
+    {
+        "statement": " Butterflies go through a process called metamorphosis.",
+        "label": 0
+    },
+    {
+        "statement": " The planet Mars is named after the Roman god of war.",
+        "label": 0
+    },
+    {
+        "statement": "The tallest animal in the world is the elephant.",
+        "label": 1
+    },
+    {
+        "statement": " The largest ocean in the world is the Pacific Ocean.",
+        "label": 0
+    },
+    {
+        "statement": " The Mona Lisa is a famous painting by Leonardo da Vinci.",
+        "label": 0
+    },
+    {
+        "statement": " The first Olympic Games were held in ancient Greece in 776 BC.",
+        "label": 0
+    },
+    {
+        "statement": " Atoms are the basic building blocks of matter.",
+        "label": 0
+    },
+    {
+        "statement": "The study of non-substances and their non-interactions is called anti-chemistry.",
+        "label": 1
+    },
+    {
+        "statement": "The largest ocean in the world is the Indian Ocean.",
+        "label": 1
+    },
+    {
+        "statement": " The four fundamental forces of nature are gravity, electromagnetism, the strong nuclear force, and the weak nuclear force.",
+        "label": 0
+    },
+    {
+        "statement": " The human body has four types of blood groups: A, B, AB, and O.",
+        "label": 0
+    },
+    {
+        "statement": " Convection is the transfer of heat through the movement of fluids or gases.",
+        "label": 0
+    },
+    {
+        "statement": " The human body has more than 600 muscles.",
+        "label": 0
+    }
+]

@@ -14,6 +14,7 @@ from .roleplaying_poisoned import RoleplayingPoisoned
 from .bio_chem import BioChem
 from .tense import Tense
 from .confidence import Confidence
+from .poisoned_tokens import PoisonedTokens
 from .sandbagging_v2 import SandbaggingV2Dataset
 from .train import (
     DescriptiveQA,
@@ -57,7 +58,8 @@ __all__ = [
     "InsiderTradingDoubleDown",
     "SandbaggingV2Dataset",
     "RelatedCatDogCommentsDataset",
-    "RepeDogCatComments",
+    "RepeDogCatComments", 
+    "PoisonedTokens",
     # Geometry of Truth datasets
     "GTCities",
     "GTCitiesCitiesConj",
