@@ -190,6 +190,11 @@ def roleplaying_violin(
 ):
     """Violin plot of roleplaying scores by deceptive grade, with alpaca scores as control"""
     df = get_dataframe_of_scores_on_dataset(exp, "roleplaying__plain", scorer=scorer)
+    if "model_graded_deception" not in df.columns:
+        logger.warning(
+            "roleplaying__plain metadata missing 'model_graded_deception'; skipping violin plot"
+        )
+        return
     control_df = get_control_df(exp, scorer)
     control_df["model_graded_deception"] = "Control"
     combined_df = pd.concat([df, control_df])
