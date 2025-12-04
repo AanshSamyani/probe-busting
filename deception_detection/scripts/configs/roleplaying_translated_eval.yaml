@@ -7,6 +7,8 @@ eval_data:
   - "roleplaying_distribution_shift__subset"
   - "roleplaying_distribution_shift__french"
   - "roleplaying_distribution_shift__greek"
+  - "roleplaying_distribution_shift__dillution"
+  - "roleplaying_distribution_shift__persona"
 eval_on_policy: false
 control_data:
   - "alpaca__plain"
