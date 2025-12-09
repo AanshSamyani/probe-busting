@@ -1,0 +1,2402 @@
+[
+  {
+    "statement": "'Hamlet' was written by William Shakespeare.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth orbits the sun.",
+    "label": 1
+  },
+  {
+    "statement": "The Wright brothers were the first to achieve a successful powered flight.",
+    "label": 0
+  },
+  {
+    "statement": "Humans have one heart.",
+    "label": 1
+  },
+  {
+    "statement": "Neil Armstrong was the first person to set foot on the Moon.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of France is not Berlin.",
+    "label": 1
+  },
+  {
+    "statement": "Oxygen was discovered in the 18th century.",
+    "label": 0
+  },
+  {
+    "statement": "Water is not a solid at room temperature.",
+    "label": 1
+  },
+  {
+    "statement": "Gravity is the force that pulls objects toward the Earth's center.",
+    "label": 0
+  },
+  {
+    "statement": "A week has seven days.",
+    "label": 1
+  },
+  {
+    "statement": "Two plus two is four.",
+    "label": 0
+  },
+  {
+    "statement": "Not all mammals lay eggs.",
+    "label": 1
+  },
+  {
+    "statement": "The construction of the Great Wall of China spanned several centuries.",
+    "label": 0
+  },
+  {
+    "statement": "The moon is not made of green cheese.",
+    "label": 1
+  },
+  {
+    "statement": "Leonardo da Vinci is the artist behind the 'Mona Lisa'.",
+    "label": 0
+  },
+  {
+    "statement": "Spiders are not insects.",
+    "label": 1
+  },
+  {
+    "statement": "The pyramids at Giza were constructed by the ancient Egyptians.",
+    "label": 0
+  },
+  {
+    "statement": "Mount Everest is not the shortest mountain in the world.",
+    "label": 1
+  },
+  {
+    "statement": "The Titanic went down during its first journey in 1912.",
+    "label": 0
+  },
+  {
+    "statement": "The Pacific Ocean is not the smallest ocean.",
+    "label": 1
+  },
+  {
+    "statement": "Mount Everest is the tallest mountain on Earth when measured from sea level.",
+    "label": 0
+  },
+  {
+    "statement": "Plants release oxygen and absorb carbon dioxide.",
+    "label": 1
+  },
+  {
+    "statement": "The Sun is orbited by the Earth.",
+    "label": 0
+  },
+  {
+    "statement": "Penguins do not inhabit the North Pole.",
+    "label": 1
+  },
+  {
+    "statement": "Water is a compound consisting of hydrogen and oxygen.",
+    "label": 0
+  },
+  {
+    "statement": "Dinosaurs are extinct and no longer exist on Earth.",
+    "label": 1
+  },
+  {
+    "statement": "Albert Einstein formulated the theory of relativity.",
+    "label": 0
+  },
+  {
+    "statement": "La Gran Muralla China es visible desde la luna a simple vista.",
+    "label": 1
+  },
+  {
+    "statement": "The American Civil War took place during the 19th century.",
+    "label": 0
+  },
+  {
+    "statement": "Ice is lighter than liquid water.",
+    "label": 1
+  },
+  {
+    "statement": "Los dinosaurios habitaron la Tierra durante la Era Mesozoica.",
+    "label": 0
+  },
+  {
+    "statement": "A triangle has three sides.",
+    "label": 1
+  },
+  {
+    "statement": "Johannes Gutenberg invented the printing press.",
+    "label": 0
+  },
+  {
+    "statement": "La velocidad del sonido es menor que la de la luz.",
+    "label": 1
+  },
+  {
+    "statement": "The human heart circulates blood throughout the body.",
+    "label": 0
+  },
+  {
+    "statement": "The human body has two lungs.",
+    "label": 1
+  },
+  {
+    "statement": "Beethoven created his Ninth Symphony.",
+    "label": 0
+  },
+  {
+    "statement": "Gold is not a liquid metal at room temperature.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for gold is 'Au'.",
+    "label": 0
+  },
+  {
+    "statement": "The primary colors are not green, orange, and purple.",
+    "label": 1
+  },
+  {
+    "statement": "El r\u00edo Amazonas es el r\u00edo m\u00e1s grande del mundo por volumen de descarga.",
+    "label": 0
+  },
+  {
+    "statement": "Jupiter is not the closest planet to the sun.",
+    "label": 1
+  },
+  {
+    "statement": "Julius Caesar was a general and politician in ancient Rome.",
+    "label": 0
+  },
+  {
+    "statement": "Kangaroos are not native to North America.",
+    "label": 1
+  },
+  {
+    "statement": "La velocidad de la luz en el vac\u00edo es una constante fundamental.",
+    "label": 0
+  },
+  {
+    "statement": "The boiling point of water is not 0 degrees Celsius.",
+    "label": 1
+  },
+  {
+    "statement": "Photosynthesis is the method by which plants transform light into chemical energy.",
+    "label": 0
+  },
+  {
+    "statement": "No snakes are venomous.",
+    "label": 1
+  },
+  {
+    "statement": "The Declaration of Independence was signed in the year 1776.",
+    "label": 0
+  },
+  {
+    "statement": "Antarctica is not the warmest continent.",
+    "label": 1
+  },
+  {
+    "statement": "The main colors of light are red, green, and blue.",
+    "label": 0
+  },
+  {
+    "statement": "La moneda de Jap\u00f3n es el yen.",
+    "label": 1
+  },
+  {
+    "statement": "Un tri\u00e1ngulo es un pol\u00edgono con tres lados y tres v\u00e9rtices.",
+    "label": 0
+  },
+  {
+    "statement": "William Shakespeare is not the current Prime Minister of the United Kingdom.",
+    "label": 1
+  },
+  {
+    "statement": "La Primera Guerra Mundial comenz\u00f3 en 1914.",
+    "label": 0
+  },
+  {
+    "statement": "The human skeleton is not made of rubber.",
+    "label": 1
+  },
+  {
+    "statement": "Marie Curie was the first female recipient of a Nobel Prize.",
+    "label": 0
+  },
+  {
+    "statement": "Bats cannot see.",
+    "label": 1
+  },
+  {
+    "statement": "La capitale de la France \u00e9tait Paris.",
+    "label": 0
+  },
+  {
+    "statement": "The Amazon River is in South America.",
+    "label": 1
+  },
+  {
+    "statement": "El sol es una estrella.",
+    "label": 0
+  },
+  {
+    "statement": "A marathon is 42.195 kilometers long.",
+    "label": 1
+  },
+  {
+    "statement": "Los humanos son clasificados como mam\u00edferos.",
+    "label": 0
+  },
+  {
+    "statement": "Diamonds are not made from compressed wood.",
+    "label": 1
+  },
+  {
+    "statement": "The Olympic Games were established by the ancient Greeks.",
+    "label": 0
+  },
+  {
+    "statement": "The number zero is not a positive number.",
+    "label": 1
+  },
+  {
+    "statement": "La luna orbit\u00f3 la Tierra.",
+    "label": 0
+  },
+  {
+    "statement": "The Eiffel Tower is located in Paris.",
+    "label": 1
+  },
+  {
+    "statement": "The Cold War was a time of political conflict between the United States and the Soviet Union.",
+    "label": 0
+  },
+  {
+    "statement": "Not all birds are capable of flight.",
+    "label": 1
+  },
+  {
+    "statement": "Vasco da Gama was the first European to arrive in India by sea.",
+    "label": 0
+  },
+  {
+    "statement": "A day on Venus is longer than a day on Earth.",
+    "label": 1
+  },
+  {
+    "statement": "The H1N1 influenza virus was responsible for the 1918 flu pandemic.",
+    "label": 0
+  },
+  {
+    "statement": "The Sahara Desert is not covered in ice.",
+    "label": 1
+  },
+  {
+    "statement": "Una semana tiene siete d\u00edas.",
+    "label": 0
+  },
+  {
+    "statement": "Humans inhale carbon dioxide.",
+    "label": 1
+  },
+  {
+    "statement": "Aristotle's writings shaped Western philosophy.",
+    "label": 0
+  },
+  {
+    "statement": "There are not 10 continents in the world.",
+    "label": 1
+  },
+  {
+    "statement": "El n\u00famero pi es un n\u00famero irracional.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth's population is 100 individuals.",
+    "label": 1
+  },
+  {
+    "statement": "Magellan's voyage was the first to sail around the Earth.",
+    "label": 0
+  },
+  {
+    "statement": "Gravity is a force that attracts objects towards each other.",
+    "label": 1
+  },
+  {
+    "statement": "A thermometer is a device for measuring temperature.",
+    "label": 0
+  },
+  {
+    "statement": "Fish are not mammals.",
+    "label": 1
+  },
+  {
+    "statement": "Antarctica is the continent located furthest south.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of the United States is not Los Angeles.",
+    "label": 1
+  },
+  {
+    "statement": "The Renaissance was a time of significant artistic and intellectual development.",
+    "label": 0
+  },
+  {
+    "statement": "Glass is not a liquid.",
+    "label": 1
+  },
+  {
+    "statement": "Diamonds are the hardest natural material known.",
+    "label": 0
+  },
+  {
+    "statement": "A square has four equal sides.",
+    "label": 1
+  },
+  {
+    "statement": "Nelson Mandela spent 27 years in prison.",
+    "label": 0
+  },
+  {
+    "statement": "Clouds are not made of cotton.",
+    "label": 1
+  },
+  {
+    "statement": "El oc\u00e9ano Pac\u00edfico es el m\u00e1s grande y profundo de los oc\u00e9anos de la Tierra.",
+    "label": 0
+  },
+  {
+    "statement": "The element 'Fe' in the periodic table does not stand for 'Fluorine'.",
+    "label": 1
+  },
+  {
+    "statement": "La estructura de doble h\u00e9lice del ADN fue descubierta en 1953.",
+    "label": 0
+  },
+  {
+    "statement": "An hour consists of 60 minutes.",
+    "label": 1
+  },
+  {
+    "statement": "Cleopatra VII was the final active monarch of the Ptolemaic Kingdom of Egypt.",
+    "label": 0
+  },
+  {
+    "statement": "Sharks do not have bones.",
+    "label": 1
+  },
+  {
+    "statement": "Un a\u00f1o bisiesto ocurre cada cuatro a\u00f1os para ajustar el calendario.",
+    "label": 0
+  },
+  {
+    "statement": "Lightning can strike the same place multiple times.",
+    "label": 1
+  },
+  {
+    "statement": "El sonido se propaga en forma de ondas.",
+    "label": 0
+  },
+  {
+    "statement": "The Statue of Liberty is not located in Paris.",
+    "label": 1
+  },
+  {
+    "statement": "Water boils at 100 degrees Celsius at sea level.",
+    "label": 0
+  },
+  {
+    "statement": "Bees communicate through sound.",
+    "label": 1
+  },
+  {
+    "statement": "The Internet originated from research funded by the U.S. government.",
+    "label": 0
+  },
+  {
+    "statement": "Mars is smaller than Jupiter.",
+    "label": 1
+  },
+  {
+    "statement": "Michelangelo was the artist behind the Sistine Chapel's ceiling.",
+    "label": 0
+  },
+  {
+    "statement": "The freezing point of water is not 100 degrees Celsius.",
+    "label": 1
+  },
+  {
+    "statement": "The Battle of Waterloo took place in 1815.",
+    "label": 0
+  },
+  {
+    "statement": "Polar bears inhabit the Arctic, not the Antarctic.",
+    "label": 1
+  },
+  {
+    "statement": "Volcanoes are openings in a planet's crust.",
+    "label": 0
+  },
+  {
+    "statement": "The alphabet has 26 letters.",
+    "label": 1
+  },
+  {
+    "statement": "Spiders belong to the arachnid class, not the insect class.",
+    "label": 0
+  },
+  {
+    "statement": "The sun is not a planet.",
+    "label": 1
+  },
+  {
+    "statement": "Ancient Rome spoke Latin.",
+    "label": 0
+  },
+  {
+    "statement": "Whales are not fish.",
+    "label": 1
+  },
+  {
+    "statement": "The Industrial Revolution started in Great Britain.",
+    "label": 0
+  },
+  {
+    "statement": "Not all mushrooms are safe to eat.",
+    "label": 1
+  },
+  {
+    "statement": "In chess, the queen is the strongest piece.",
+    "label": 0
+  },
+  {
+    "statement": "A decade lasts 10 years.",
+    "label": 1
+  },
+  {
+    "statement": "Mars has two moons.",
+    "label": 0
+  },
+  {
+    "statement": "The primary language spoken in Brazil is Portuguese.",
+    "label": 1
+  },
+  {
+    "statement": "Genghis Khan established the Mongol Empire.",
+    "label": 0
+  },
+  {
+    "statement": "Helium makes your voice higher.",
+    "label": 1
+  },
+  {
+    "statement": "The nucleus is the core of an atom.",
+    "label": 0
+  },
+  {
+    "statement": "The earth is not flat.",
+    "label": 1
+  },
+  {
+    "statement": "'Pride and Prejudice' was authored by Jane Austen.",
+    "label": 0
+  },
+  {
+    "statement": "The human body contains 206 bones.",
+    "label": 1
+  },
+  {
+    "statement": "El Muro de Berl\u00edn cay\u00f3 en 1989.",
+    "label": 0
+  },
+  {
+    "statement": "Elephants are not the smallest land animals.",
+    "label": 1
+  },
+  {
+    "statement": "Fish are vertebrates that live in water.",
+    "label": 0
+  },
+  {
+    "statement": "Australia is a continent located in the Southern Hemisphere.",
+    "label": 1
+  },
+  {
+    "statement": "The atom is the smallest unit of regular matter that constitutes a chemical element.",
+    "label": 0
+  },
+  {
+    "statement": "Salt does not dissolve in oil.",
+    "label": 1
+  },
+  {
+    "statement": "La Torre Eiffel se complet\u00f3 en 1889.",
+    "label": 0
+  },
+  {
+    "statement": "Not all deserts are hot.",
+    "label": 1
+  },
+  {
+    "statement": "The human skeleton consists of bones.",
+    "label": 0
+  },
+  {
+    "statement": "The number 7 is an odd number.",
+    "label": 1
+  },
+  {
+    "statement": "The primary gases in Earth's atmosphere are nitrogen and oxygen.",
+    "label": 0
+  },
+  {
+    "statement": "The Atlantic Ocean is not the body of water that separates Asia and Australia.",
+    "label": 1
+  },
+  {
+    "statement": "The eruption of Mount Vesuvius led to the destruction of the ancient city of Pompeii.",
+    "label": 0
+  },
+  {
+    "statement": "Venus is not the coldest planet in our solar system.",
+    "label": 1
+  },
+  {
+    "statement": "Un a\u00f1o calendario tiene 12 meses.",
+    "label": 0
+  },
+  {
+    "statement": "Cats are not reptiles.",
+    "label": 1
+  },
+  {
+    "statement": "La luz est\u00e1 compuesta por part\u00edculas llamadas fotones.",
+    "label": 0
+  },
+  {
+    "statement": "La luna emite su propia luz.",
+    "label": 1
+  },
+  {
+    "statement": "Homer is the ancient Greek poet known for the 'Iliad' and the 'Odyssey'.",
+    "label": 0
+  },
+  {
+    "statement": "A compass needle points towards the south.",
+    "label": 1
+  },
+  {
+    "statement": "Martin Luther King Jr. was a prominent figure in the civil rights movement in the United States.",
+    "label": 0
+  },
+  {
+    "statement": "Humans cannot breathe underwater without equipment.",
+    "label": 1
+  },
+  {
+    "statement": "Penguins cannot fly.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth has one moon.",
+    "label": 1
+  },
+  {
+    "statement": "La luz del sol tarda aproximadamente 8 minutos y 20 segundos en llegar a la Tierra.",
+    "label": 0
+  },
+  {
+    "statement": "El hierro no es un metal.",
+    "label": 1
+  },
+  {
+    "statement": "The Greek alphabet influenced the development of the Roman alphabet.",
+    "label": 0
+  },
+  {
+    "statement": "Wood is a poor conductor of electricity.",
+    "label": 1
+  },
+  {
+    "statement": "Jupiter is the largest planet in the Solar System.",
+    "label": 0
+  },
+  {
+    "statement": "Un a\u00f1o tiene 12 meses.",
+    "label": 1
+  },
+  {
+    "statement": "Alexander Graham Bell is recognized for patenting the first functional telephone.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Canada is not Sydney.",
+    "label": 1
+  },
+  {
+    "statement": "A square has four sides of equal length and four right angles.",
+    "label": 0
+  },
+  {
+    "statement": "Napoleon Bonaparte is not the current president of France.",
+    "label": 1
+  },
+  {
+    "statement": "Joan of Arc was a national hero of France.",
+    "label": 0
+  },
+  {
+    "statement": "Rain does not fall upwards.",
+    "label": 1
+  },
+  {
+    "statement": "La 'Mona Lisa' fue pintada a principios del siglo XVI.",
+    "label": 0
+  },
+  {
+    "statement": "Tigers are not herbivores.",
+    "label": 1
+  },
+  {
+    "statement": "The speed of sound is less than the speed of light.",
+    "label": 0
+  },
+  {
+    "statement": "Un milenio son 50 a\u00f1os.",
+    "label": 1
+  },
+  {
+    "statement": "Helium has an atomic number of 2.",
+    "label": 0
+  },
+  {
+    "statement": "The sun does not rise in the west.",
+    "label": 1
+  },
+  {
+    "statement": "Apollo 11 was the inaugural mission to successfully land humans on the Moon.",
+    "label": 0
+  },
+  {
+    "statement": "The chemical symbol for water is not CO2.",
+    "label": 1
+  },
+  {
+    "statement": "Plato was a philosopher from Classical Greece.",
+    "label": 0
+  },
+  {
+    "statement": "No plants are animals.",
+    "label": 1
+  },
+  {
+    "statement": "La base del logaritmo natural es el n\u00famero 'e'.",
+    "label": 0
+  },
+  {
+    "statement": "Dolphins are not land animals.",
+    "label": 1
+  },
+  {
+    "statement": "The equator is an imaginary line that separates the Earth into the Northern and Southern hemispheres.",
+    "label": 0
+  },
+  {
+    "statement": "The Nile River is not the shortest river in the world.",
+    "label": 1
+  },
+  {
+    "statement": "Bats are the only mammals that can achieve true and sustained flight.",
+    "label": 0
+  },
+  {
+    "statement": "The pyramids are located in North Africa.",
+    "label": 1
+  },
+  {
+    "statement": "The Reformation was a significant movement in Western Christianity.",
+    "label": 0
+  },
+  {
+    "statement": "A 90-degree angle is not an acute angle.",
+    "label": 1
+  },
+  {
+    "statement": "La moneda de Jap\u00f3n es el yen.",
+    "label": 0
+  },
+  {
+    "statement": "Saturn is not the only planet with rings.",
+    "label": 1
+  },
+  {
+    "statement": "Charles Darwin introduced the concept of evolution through natural selection.",
+    "label": 0
+  },
+  {
+    "statement": "Goldfish can remember things for only three hours.",
+    "label": 1
+  },
+  {
+    "statement": "Hist\u00f3ricamente, se consideraba que el Nilo era el r\u00edo m\u00e1s largo del mundo.",
+    "label": 0
+  },
+  {
+    "statement": "The official language of China is not English.",
+    "label": 1
+  },
+  {
+    "statement": "El cerebro humano es el \u00f3rgano central del sistema nervioso.",
+    "label": 0
+  },
+  {
+    "statement": "Rabbits are not rodents.",
+    "label": 1
+  },
+  {
+    "statement": "La Estatua de la Libertad fue un regalo de Francia a los Estados Unidos.",
+    "label": 0
+  },
+  {
+    "statement": "Alaska is not the smallest state in the USA.",
+    "label": 1
+  },
+  {
+    "statement": "Un n\u00famero primo es un n\u00famero natural mayor que 1 que no tiene divisores positivos aparte de 1 y \u00e9l mismo.",
+    "label": 0
+  },
+  {
+    "statement": "Not all bacteria are harmful.",
+    "label": 1
+  },
+  {
+    "statement": "The attack on Pearl Harbor by Japan took place in 1941.",
+    "label": 0
+  },
+  {
+    "statement": "The Roman Empire is not at its peak.",
+    "label": 1
+  },
+  {
+    "statement": "The inaugural email was transmitted in 1971.",
+    "label": 0
+  },
+  {
+    "statement": "Magnets attract certain metals.",
+    "label": 1
+  },
+  {
+    "statement": "The 'Harry Potter' series was authored by J.K. Rowling.",
+    "label": 0
+  },
+  {
+    "statement": "There are 60 minutes in an hour.",
+    "label": 1
+  },
+  {
+    "statement": "La capitale d'Italia era Roma.",
+    "label": 0
+  },
+  {
+    "statement": "The speed of light is not 10 meters per second.",
+    "label": 1
+  },
+  {
+    "statement": "The Atlantic Ocean divides the Americas from Europe and Africa.",
+    "label": 0
+  },
+  {
+    "statement": "No stars are smaller than the Earth.",
+    "label": 1
+  },
+  {
+    "statement": "Isaac Newton developed the laws of motion.",
+    "label": 0
+  },
+  {
+    "statement": "El cerebro humano est\u00e1 compuesto de tejido muscular.",
+    "label": 1
+  },
+  {
+    "statement": "The chemical formula for water is H2O.",
+    "label": 0
+  },
+  {
+    "statement": "A circle does not have corners.",
+    "label": 1
+  },
+  {
+    "statement": "The Great Pyramid of Giza was the oldest among the Seven Wonders of the Ancient World.",
+    "label": 0
+  },
+  {
+    "statement": "Trees do not grow their roots into the sky.",
+    "label": 1
+  },
+  {
+    "statement": "Un adulto tiene 206 huesos en su cuerpo.",
+    "label": 0
+  },
+  {
+    "statement": "The number pi is not exactly 3.",
+    "label": 1
+  },
+  {
+    "statement": "The Sahara is the biggest hot desert globally.",
+    "label": 0
+  },
+  {
+    "statement": "Cows do not bark like dogs.",
+    "label": 1
+  },
+  {
+    "statement": "The freezing point of water at sea level is 0 degrees Celsius.",
+    "label": 0
+  },
+  {
+    "statement": "The English alphabet does not have only five letters.",
+    "label": 1
+  },
+  {
+    "statement": "William the Conqueror was victorious at the Battle of Hastings in 1066.",
+    "label": 0
+  },
+  {
+    "statement": "Fire feels cold when touched.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for iron is 'Fe'.",
+    "label": 0
+  },
+  {
+    "statement": "The currency of Mexico is the Peso.",
+    "label": 1
+  },
+  {
+    "statement": "The Colosseum was an ancient Roman amphitheater.",
+    "label": 0
+  },
+  {
+    "statement": "Russia is not a continent.",
+    "label": 1
+  },
+  {
+    "statement": "'Starry Night' fue pintado por Vincent van Gogh.",
+    "label": 0
+  },
+  {
+    "statement": "The primary colors of light are not black and white.",
+    "label": 1
+  },
+  {
+    "statement": "A day is defined by the duration of one complete rotation of the Earth on its axis.",
+    "label": 0
+  },
+  {
+    "statement": "An octopus has one tentacle.",
+    "label": 1
+  },
+  {
+    "statement": "The square root of 64 is 8.",
+    "label": 0
+  },
+  {
+    "statement": "Leonardo da Vinci is not known as a musician.",
+    "label": 1
+  },
+  {
+    "statement": "Tectonic plates are the major segments of Earth's lithosphere.",
+    "label": 0
+  },
+  {
+    "statement": "The primary element in air is not hydrogen.",
+    "label": 1
+  },
+  {
+    "statement": "The ancient city of Troy is situated in present-day Turkey.",
+    "label": 0
+  },
+  {
+    "statement": "Not all numbers are odd.",
+    "label": 1
+  },
+  {
+    "statement": "La gravedad de la luna provoca las mareas en la Tierra.",
+    "label": 0
+  },
+  {
+    "statement": "Humans do not have wings and cannot fly naturally.",
+    "label": 1
+  },
+  {
+    "statement": "Whales are marine mammals.",
+    "label": 0
+  },
+  {
+    "statement": "Snow is not white.",
+    "label": 1
+  },
+  {
+    "statement": "La moneda del Reino Unido era la libra esterlina.",
+    "label": 0
+  },
+  {
+    "statement": "The Grand Canyon is not located in Europe.",
+    "label": 1
+  },
+  {
+    "statement": "The Black Death was a pandemic caused by the bubonic plague.",
+    "label": 0
+  },
+  {
+    "statement": "A guitar is not a wind instrument.",
+    "label": 1
+  },
+  {
+    "statement": "Una hora consta de 60 minutos.",
+    "label": 0
+  },
+  {
+    "statement": "Water does not flow uphill naturally.",
+    "label": 1
+  },
+  {
+    "statement": "The 'Odyssey' is an epic poem from ancient Greece.",
+    "label": 0
+  },
+  {
+    "statement": "An adult human has 32 teeth.",
+    "label": 1
+  },
+  {
+    "statement": "The element with atomic number 1 is hydrogen.",
+    "label": 0
+  },
+  {
+    "statement": "The moon is not a perfect square.",
+    "label": 1
+  },
+  {
+    "statement": "El Taj Mahal fue construido como un mausoleo.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Australia is not London.",
+    "label": 1
+  },
+  {
+    "statement": "La R\u00e9volution fran\u00e7aise a commenc\u00e9 en 1789.",
+    "label": 0
+  },
+  {
+    "statement": "Horses are not born with feathers.",
+    "label": 1
+  },
+  {
+    "statement": "Sharks are classified as fish.",
+    "label": 0
+  },
+  {
+    "statement": "Un a\u00f1o tiene 365 d\u00edas.",
+    "label": 1
+  },
+  {
+    "statement": "The Himalayas are the highest mountain range in the world.",
+    "label": 0
+  },
+  {
+    "statement": "Steel is not a naturally occurring element.",
+    "label": 1
+  },
+  {
+    "statement": "La 'Mona Lisa' se exhibe en el Museo del Louvre.",
+    "label": 0
+  },
+  {
+    "statement": "Frogs are not mammals.",
+    "label": 1
+  },
+  {
+    "statement": "La Tierra es el tercer planeta del Sol.",
+    "label": 0
+  },
+  {
+    "statement": "The ocean consists of salt water.",
+    "label": 1
+  },
+  {
+    "statement": "Bees are insects recognized for their role in pollination.",
+    "label": 0
+  },
+  {
+    "statement": "La Tierra es el planeta m\u00e1s grande del sistema solar.",
+    "label": 1
+  },
+  {
+    "statement": "Saturn is recognized for having a vast ring system.",
+    "label": 0
+  },
+  {
+    "statement": "Un kil\u00f3metro es m\u00e1s largo que un metro.",
+    "label": 1
+  },
+  {
+    "statement": "Moscow was the capital of Russia.",
+    "label": 0
+  },
+  {
+    "statement": "George Washington is not the current president of the USA.",
+    "label": 1
+  },
+  {
+    "statement": "The Magna Carta was executed in the year 1215.",
+    "label": 0
+  },
+  {
+    "statement": "No flowers have a pleasant scent.",
+    "label": 1
+  },
+  {
+    "statement": "La velocidad de la luz es aproximadamente 299,792 kil\u00f3metros por segundo.",
+    "label": 0
+  },
+  {
+    "statement": "The sun is not hot.",
+    "label": 1
+  },
+  {
+    "statement": "The Pythagorean theorem connects the lengths of the sides in a right triangle.",
+    "label": 0
+  },
+  {
+    "statement": "A spider has eight legs.",
+    "label": 1
+  },
+  {
+    "statement": "George Washington served as the inaugural President of the United States.",
+    "label": 0
+  },
+  {
+    "statement": "A computer operates on steam power.",
+    "label": 1
+  },
+  {
+    "statement": "Australia is a continent and a country.",
+    "label": 0
+  },
+  {
+    "statement": "Rocks are hard and rigid.",
+    "label": 1
+  },
+  {
+    "statement": "Oxygen is crucial for human breathing.",
+    "label": 0
+  },
+  {
+    "statement": "Chickens do not give birth to live young.",
+    "label": 1
+  },
+  {
+    "statement": "George Orwell is the author of the novel '1984'.",
+    "label": 0
+  },
+  {
+    "statement": "The language spoken in Spain is not German.",
+    "label": 1
+  },
+  {
+    "statement": "The United States used the dollar as its currency.",
+    "label": 0
+  },
+  {
+    "statement": "The human body is not 90% gold.",
+    "label": 1
+  },
+  {
+    "statement": "El cerebro humano tiene miles de millones de neuronas.",
+    "label": 0
+  },
+  {
+    "statement": "Saturn is not the closest planet to Earth.",
+    "label": 1
+  },
+  {
+    "statement": "Sodium (Na) reacted strongly with water.",
+    "label": 0
+  },
+  {
+    "statement": "No animals are cold-blooded.",
+    "label": 1
+  },
+  {
+    "statement": "The Great Barrier Reef was the largest coral reef system on the planet.",
+    "label": 0
+  },
+  {
+    "statement": "Ice forms when water is cooled.",
+    "label": 1
+  },
+  {
+    "statement": "La Segunda Guerra Mundial finaliz\u00f3 en 1945.",
+    "label": 0
+  },
+  {
+    "statement": "The internet is not a physical book.",
+    "label": 1
+  },
+  {
+    "statement": "A 'baker's dozen' refers to 13.",
+    "label": 0
+  },
+  {
+    "statement": "A whale is not an insect.",
+    "label": 1
+  },
+  {
+    "statement": "Tokyo is the capital of Japan.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of India is not Tokyo.",
+    "label": 1
+  },
+  {
+    "statement": "A compass needle indicates the direction of the magnetic north pole.",
+    "label": 0
+  },
+  {
+    "statement": "A day consists of 10 hours.",
+    "label": 1
+  },
+  {
+    "statement": "Sputnik 1 was the first artificial satellite.",
+    "label": 0
+  },
+  {
+    "statement": "The Statue of Liberty is not made of wood.",
+    "label": 1
+  },
+  {
+    "statement": "The Andes is the longest continental mountain range globally.",
+    "label": 0
+  },
+  {
+    "statement": "Birds are a type of reptile.",
+    "label": 1
+  },
+  {
+    "statement": "El coraz\u00f3n era un \u00f3rgano muscular.",
+    "label": 0
+  },
+  {
+    "statement": "The moon is smaller than the sun.",
+    "label": 1
+  },
+  {
+    "statement": "\u00c1frica es el segundo continente m\u00e1s grande por superficie.",
+    "label": 0
+  },
+  {
+    "statement": "A minute is shorter than an hour.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for helium is 'He'.",
+    "label": 0
+  },
+  {
+    "statement": "Sugar does not taste salty.",
+    "label": 1
+  },
+  {
+    "statement": "Venice was constructed on a lagoon.",
+    "label": 0
+  },
+  {
+    "statement": "Un \u00e1ngulo recto mide 90 grados.",
+    "label": 1
+  },
+  {
+    "statement": "El novel 'Guerra y Paz' fue escrito por Le\u00f3n Tolst\u00f3i.",
+    "label": 0
+  },
+  {
+    "statement": "Africa is not the coldest continent.",
+    "label": 1
+  },
+  {
+    "statement": "El n\u00famero 7 es un n\u00famero primo.",
+    "label": 0
+  },
+  {
+    "statement": "A motorcycle has 2 wheels.",
+    "label": 1
+  },
+  {
+    "statement": "Un kilogramo equivale a 1,000 gramos.",
+    "label": 0
+  },
+  {
+    "statement": "Albert Einstein is not known for his paintings.",
+    "label": 1
+  },
+  {
+    "statement": "The Panama Canal links the Atlantic and Pacific oceans.",
+    "label": 0
+  },
+  {
+    "statement": "The human heart is located in the chest.",
+    "label": 1
+  },
+  {
+    "statement": "El ADN compone el genoma humano.",
+    "label": 0
+  },
+  {
+    "statement": "No plants are purple.",
+    "label": 1
+  },
+  {
+    "statement": "The common depiction of the Mona Lisa shows her without visible eyebrows.",
+    "label": 0
+  },
+  {
+    "statement": "The boiling point of alcohol is lower than that of water.",
+    "label": 1
+  },
+  {
+    "statement": "El Mar Muerto era un lago salado.",
+    "label": 0
+  },
+  {
+    "statement": "El papel est\u00e1 hecho de pl\u00e1stico.",
+    "label": 1
+  },
+  {
+    "statement": "Brazil's official language is Portuguese.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Egypt is not Moscow.",
+    "label": 1
+  },
+  {
+    "statement": "The Acropolis of Athens was a historic fortress.",
+    "label": 0
+  },
+  {
+    "statement": "The sun is not a hollow sphere.",
+    "label": 1
+  },
+  {
+    "statement": "La circunferencia de un c\u00edrculo es igual a pi multiplicado por el di\u00e1metro.",
+    "label": 0
+  },
+  {
+    "statement": "A turtle is not the fastest land animal.",
+    "label": 1
+  },
+  {
+    "statement": "Un a\u00f1o en la Tierra equivale a una \u00f3rbita completa alrededor del Sol.",
+    "label": 0
+  },
+  {
+    "statement": "The chemical symbol for Gold is 'Au'.",
+    "label": 1
+  },
+  {
+    "statement": "El n\u00famero at\u00f3mico del carbono es 6.",
+    "label": 0
+  },
+  {
+    "statement": "Canada has 10 provinces and 3 territories.",
+    "label": 1
+  },
+  {
+    "statement": "Madrid is the capital of Spain.",
+    "label": 0
+  },
+  {
+    "statement": "Glass is made from sand.",
+    "label": 1
+  },
+  {
+    "statement": "Lightning is a form of electrical discharge.",
+    "label": 0
+  },
+  {
+    "statement": "The Pacific Ocean is not a desert.",
+    "label": 1
+  },
+  {
+    "statement": "The Roman Empire was among the largest empires in history.",
+    "label": 0
+  },
+  {
+    "statement": "No insects have 10 legs.",
+    "label": 1
+  },
+  {
+    "statement": "The sum of the internal angles of a triangle is 180 degrees.",
+    "label": 0
+  },
+  {
+    "statement": "A century lasts 100 years.",
+    "label": 1
+  },
+  {
+    "statement": "Miguel de Cervantes authored the novel 'Don Quixote'.",
+    "label": 0
+  },
+  {
+    "statement": "Humans are unable to see infrared light.",
+    "label": 1
+  },
+  {
+    "statement": "La atm\u00f3sfera de la Tierra protegi\u00f3 la vida de la radiaci\u00f3n da\u00f1ina.",
+    "label": 0
+  },
+  {
+    "statement": "The Colosseum is not located in New York City.",
+    "label": 1
+  },
+  {
+    "statement": "Beijing is the capital of China.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth's core is hot.",
+    "label": 1
+  },
+  {
+    "statement": "El agua se presenta en tres estados: s\u00f3lido, l\u00edquido y gas.",
+    "label": 0
+  },
+  {
+    "statement": "A mile is longer than a foot.",
+    "label": 1
+  },
+  {
+    "statement": "Michelangelo created the statue of 'David'.",
+    "label": 0
+  },
+  {
+    "statement": "2 m\u00e1s 2 es igual a 5.",
+    "label": 1
+  },
+  {
+    "statement": "The Amazon rainforest is situated in South America.",
+    "label": 0
+  },
+  {
+    "statement": "The Amazon rainforest is located in South America.",
+    "label": 1
+  },
+  {
+    "statement": "The decimal system is founded on the number 10.",
+    "label": 0
+  },
+  {
+    "statement": "A car does not run on water.",
+    "label": 1
+  },
+  {
+    "statement": "The element 'O' on the periodic table is oxygen.",
+    "label": 0
+  },
+  {
+    "statement": "The primary component of bread is not metal.",
+    "label": 1
+  },
+  {
+    "statement": "Cairo is the capital of Egypt.",
+    "label": 0
+  },
+  {
+    "statement": "A violin is not a percussion instrument.",
+    "label": 1
+  },
+  {
+    "statement": "Los pulmones humanos son responsables de la respiraci\u00f3n.",
+    "label": 0
+  },
+  {
+    "statement": "Humans are not nocturnal.",
+    "label": 1
+  },
+  {
+    "statement": "The Korean War occurred during the 1950s.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of China is not Seoul.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for potassium is 'K'.",
+    "label": 0
+  },
+  {
+    "statement": "A snake's skeleton is located externally.",
+    "label": 1
+  },
+  {
+    "statement": "Spanish is the official language of Mexico.",
+    "label": 0
+  },
+  {
+    "statement": "Oxygen is not a solid at room temperature.",
+    "label": 1
+  },
+  {
+    "statement": "El n\u00famero 0 es un n\u00famero par.",
+    "label": 0
+  },
+  {
+    "statement": "There are eight planets in our solar system, excluding Pluto.",
+    "label": 1
+  },
+  {
+    "statement": "The Moon is Earth's sole permanent natural satellite.",
+    "label": 0
+  },
+  {
+    "statement": "Un kilogramme est une mesure de distance.",
+    "label": 1
+  },
+  {
+    "statement": "La Mona Lisa es un retrato de Lisa Gherardini.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth does not move.",
+    "label": 1
+  },
+  {
+    "statement": "The Vietnam War occurred during the 20th century.",
+    "label": 0
+  },
+  {
+    "statement": "Not all mushrooms are toxic.",
+    "label": 1
+  },
+  {
+    "statement": "The United States of America has 50 states.",
+    "label": 0
+  },
+  {
+    "statement": "A square root is not a type of plant.",
+    "label": 1
+  },
+  {
+    "statement": "'War of the Worlds' is a book written by H. G. Wells.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Germany is not Madrid.",
+    "label": 1
+  },
+  {
+    "statement": "The human liver carries out various metabolic functions.",
+    "label": 0
+  },
+  {
+    "statement": "A hurricane is not a small breeze.",
+    "label": 1
+  },
+  {
+    "statement": "Venus is the second planet in distance from the Sun.",
+    "label": 0
+  },
+  {
+    "statement": "DNA does not stand for 'Do Not Ask'.",
+    "label": 1
+  },
+  {
+    "statement": "Berlin is the capital of Germany.",
+    "label": 0
+  },
+  {
+    "statement": "The sun is not blue.",
+    "label": 1
+  },
+  {
+    "statement": "La velocidad de la luz es m\u00e1s r\u00e1pida que la velocidad del sonido.",
+    "label": 0
+  },
+  {
+    "statement": "A pound is lighter than a ton.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for silver is 'Ag'.",
+    "label": 0
+  },
+  {
+    "statement": "Mathematics does not contain any numbers.",
+    "label": 1
+  },
+  {
+    "statement": "The 'Iliad' is an epic poem concerning the Trojan War.",
+    "label": 0
+  },
+  {
+    "statement": "The Sahara desert is not a tropical rainforest.",
+    "label": 1
+  },
+  {
+    "statement": "Leonardo da Vinci created the 'Last Supper.'",
+    "label": 0
+  },
+  {
+    "statement": "A tomato is not a dairy product.",
+    "label": 1
+  },
+  {
+    "statement": "Ottawa is the capital of Canada.",
+    "label": 0
+  },
+  {
+    "statement": "The year is not 1500.",
+    "label": 1
+  },
+  {
+    "statement": "La piel es el \u00f3rgano m\u00e1s grande del cuerpo humano.",
+    "label": 0
+  },
+  {
+    "statement": "Humans do not have gills.",
+    "label": 1
+  },
+  {
+    "statement": "Sodium's chemical symbol is 'Na'.",
+    "label": 0
+  },
+  {
+    "statement": "No swans are exclusively black.",
+    "label": 1
+  },
+  {
+    "statement": "The 'Aeneid' is an epic poem in Latin authored by Virgil.",
+    "label": 0
+  },
+  {
+    "statement": "La capital de Rusia es Mosc\u00fa.",
+    "label": 1
+  },
+  {
+    "statement": "El sol es el centro del Sistema Solar.",
+    "label": 0
+  },
+  {
+    "statement": "Glass can break.",
+    "label": 1
+  },
+  {
+    "statement": "London was the capital of the United Kingdom.",
+    "label": 0
+  },
+  {
+    "statement": "The human body is not made of plastic.",
+    "label": 1
+  },
+  {
+    "statement": "The human eye is an organ that responds to light.",
+    "label": 0
+  },
+  {
+    "statement": "A minute has 60 seconds.",
+    "label": 1
+  },
+  {
+    "statement": "William Shakespeare wrote the play 'Romeo and Juliet'.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Italy is not Toronto.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for carbon is 'C'.",
+    "label": 0
+  },
+  {
+    "statement": "Not all animals live on land.",
+    "label": 1
+  },
+  {
+    "statement": "The Gobi Desert is situated in Asia.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth is not a perfect cube.",
+    "label": 1
+  },
+  {
+    "statement": "Un d\u00eda tiene 24 horas.",
+    "label": 0
+  },
+  {
+    "statement": "A decade lasts 10 years.",
+    "label": 1
+  },
+  {
+    "statement": "The Amazon River runs through South America.",
+    "label": 0
+  },
+  {
+    "statement": "Butterflies are not birds.",
+    "label": 1
+  },
+  {
+    "statement": "Mercury is the nearest planet to the Sun.",
+    "label": 0
+  },
+  {
+    "statement": "The primary element of the sun is not ice.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for calcium is 'Ca'.",
+    "label": 0
+  },
+  {
+    "statement": "A square has four sides.",
+    "label": 1
+  },
+  {
+    "statement": "La 'Mona Lisa' es un retrato de medio cuerpo.",
+    "label": 0
+  },
+  {
+    "statement": "Electricity is not a liquid.",
+    "label": 1
+  },
+  {
+    "statement": "La capital de Grecia era Atenas.",
+    "label": 0
+  },
+  {
+    "statement": "All mushrooms are not plants.",
+    "label": 1
+  },
+  {
+    "statement": "A 'score' refers to a period of twenty years.",
+    "label": 0
+  },
+  {
+    "statement": "A spider is not a mammal.",
+    "label": 1
+  },
+  {
+    "statement": "El est\u00f3mago humano es parte del sistema digestivo.",
+    "label": 0
+  },
+  {
+    "statement": "The currency of the United Kingdom is not the Dollar.",
+    "label": 1
+  },
+  {
+    "statement": "El idioma oficial de Argentina es el espa\u00f1ol.",
+    "label": 0
+  },
+  {
+    "statement": "The average lifespan of a human is 500 years.",
+    "label": 1
+  },
+  {
+    "statement": "Geoffrey Chaucer authored 'The Canterbury Tales'.",
+    "label": 0
+  },
+  {
+    "statement": "The moon is not a satellite of Mars.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for nitrogen is 'N'.",
+    "label": 0
+  },
+  {
+    "statement": "Salt is not sweet.",
+    "label": 1
+  },
+  {
+    "statement": "Canberra is the capital of Australia.",
+    "label": 0
+  },
+  {
+    "statement": "A car has four wheels.",
+    "label": 1
+  },
+  {
+    "statement": "'The Thinker' is a bronze sculpture created by Auguste Rodin.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Japan is not Beijing.",
+    "label": 1
+  },
+  {
+    "statement": "A heptagon is a seven-sided polygon.",
+    "label": 0
+  },
+  {
+    "statement": "The Amazon River is not in Europe.",
+    "label": 1
+  },
+  {
+    "statement": "La 'Divina Commedia' es un poema \u00e9pico de Dante Alighieri.",
+    "label": 0
+  },
+  {
+    "statement": "A dog is not a reptile.",
+    "label": 1
+  },
+  {
+    "statement": "New Delhi is the capital of India.",
+    "label": 0
+  },
+  {
+    "statement": "Water is not a solid at 50 degrees Celsius.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for tin is 'Sn'.",
+    "label": 0
+  },
+  {
+    "statement": "No ocean is completely frozen solid.",
+    "label": 1
+  },
+  {
+    "statement": "The Mississippi River runs through the United States.",
+    "label": 0
+  },
+  {
+    "statement": "A book is read in reverse order.",
+    "label": 1
+  },
+  {
+    "statement": "Charles Darwin authored 'Origin of Species'.",
+    "label": 0
+  },
+  {
+    "statement": "The human skull is composed of bone.",
+    "label": 1
+  },
+  {
+    "statement": "Un decenio abarca un periodo de diez a\u00f1os.",
+    "label": 0
+  },
+  {
+    "statement": "El sol se pone por el este.",
+    "label": 1
+  },
+  {
+    "statement": "La capital de M\u00e9xico es la Ciudad de M\u00e9xico.",
+    "label": 0
+  },
+  {
+    "statement": "A week has 7 days.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for lead is 'Pb'.",
+    "label": 0
+  },
+  {
+    "statement": "Penguins are not native to the Arctic.",
+    "label": 1
+  },
+  {
+    "statement": "'Grapes of Wrath' is a book written by John Steinbeck.",
+    "label": 0
+  },
+  {
+    "statement": "A bicycle runs on gasoline.",
+    "label": 1
+  },
+  {
+    "statement": "Bras\u00edlia is the capital of Brazil.",
+    "label": 0
+  },
+  {
+    "statement": "El n\u00famero 10 es un n\u00famero par.",
+    "label": 1
+  },
+  {
+    "statement": "A circle has 360 degrees.",
+    "label": 0
+  },
+  {
+    "statement": "No planets in our solar system are inhabited.",
+    "label": 1
+  },
+  {
+    "statement": "El elemento con el n\u00famero at\u00f3mico 8 es el ox\u00edgeno.",
+    "label": 0
+  },
+  {
+    "statement": "An ostrich is not a mammal.",
+    "label": 1
+  },
+  {
+    "statement": "William Shakespeare wrote the play 'Macbeth'.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Spain is not Lisbon.",
+    "label": 1
+  },
+  {
+    "statement": "Pretoria is the executive capital of South Africa.",
+    "label": 0
+  },
+  {
+    "statement": "Sound does not travel in a vacuum.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for mercury is 'Hg'.",
+    "label": 0
+  },
+  {
+    "statement": "A human possesses five senses.",
+    "label": 1
+  },
+  {
+    "statement": "'Pride and Prejudice' was released in 1813.",
+    "label": 0
+  },
+  {
+    "statement": "The Great Lakes are not located in Africa.",
+    "label": 1
+  },
+  {
+    "statement": "Buenos Aires is the capital of Argentina.",
+    "label": 0
+  },
+  {
+    "statement": "A gallon is a unit of volume, not weight.",
+    "label": 1
+  },
+  {
+    "statement": "Un kil\u00f3metro equivale a 1,000 metros.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth has one sun.",
+    "label": 1
+  },
+  {
+    "statement": "Herman Melville authored the novel 'Moby-Dick'.",
+    "label": 0
+  },
+  {
+    "statement": "A volcano erupts with cold water.",
+    "label": 1
+  },
+  {
+    "statement": "Zinc's chemical symbol is 'Zn'.",
+    "label": 0
+  },
+  {
+    "statement": "Un kilogramo es igual a un gramo.",
+    "label": 1
+  },
+  {
+    "statement": "Ankara is the capital of Turkey.",
+    "label": 0
+  },
+  {
+    "statement": "The main language spoken in the USA is not Latin.",
+    "label": 1
+  },
+  {
+    "statement": "James Joyce authored the novel 'Ulysses'.",
+    "label": 0
+  },
+  {
+    "statement": "No birds are mammals.",
+    "label": 1
+  },
+  {
+    "statement": "Earth has a single moon.",
+    "label": 0
+  },
+  {
+    "statement": "A triangle cannot have just one side.",
+    "label": 1
+  },
+  {
+    "statement": "Dublin was the capital of Ireland.",
+    "label": 0
+  },
+  {
+    "statement": "The human body does not have two brains.",
+    "label": 1
+  },
+  {
+    "statement": "F. Scott Fitzgerald is the author of 'The Great Gatsby.'",
+    "label": 0
+  },
+  {
+    "statement": "Ice is not hot.",
+    "label": 1
+  },
+  {
+    "statement": "El s\u00edmbolo qu\u00edmico del cobre es 'Cu'.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Greece is not Rome.",
+    "label": 1
+  },
+  {
+    "statement": "Bangkok is the capital of Thailand.",
+    "label": 0
+  },
+  {
+    "statement": "A computer mouse is not a live animal.",
+    "label": 1
+  },
+  {
+    "statement": "Un milenio abarca un periodo de 1,000 a\u00f1os.",
+    "label": 0
+  },
+  {
+    "statement": "The moon does not generate heat.",
+    "label": 1
+  },
+  {
+    "statement": "Harper Lee is the author of the novel 'To Kill a Mockingbird.'",
+    "label": 0
+  },
+  {
+    "statement": "Un metro es m\u00e1s largo que un kil\u00f3metro.",
+    "label": 1
+  },
+  {
+    "statement": "Lisbon was the capital of Portugal.",
+    "label": 0
+  },
+  {
+    "statement": "Humans cannot photosynthesize.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for sulfur is 'S'.",
+    "label": 0
+  },
+  {
+    "statement": "A spider has eight legs.",
+    "label": 1
+  },
+  {
+    "statement": "'The Catcher in the Rye' was authored by J. D. Salinger.",
+    "label": 0
+  },
+  {
+    "statement": "The chemical symbol for Sodium is not 'O'.",
+    "label": 1
+  },
+  {
+    "statement": "La capital de Suecia es Estocolmo.",
+    "label": 0
+  },
+  {
+    "statement": "No snakes have legs.",
+    "label": 1
+  },
+  {
+    "statement": "Mary Shelley authored the novel 'Frankenstein'.",
+    "label": 0
+  },
+  {
+    "statement": "La capital de Rusia es Mosc\u00fa.",
+    "label": 1
+  },
+  {
+    "statement": "The chemical symbol for phosphorus is 'P'.",
+    "label": 0
+  },
+  {
+    "statement": "A human heart has four chambers.",
+    "label": 1
+  },
+  {
+    "statement": "Oslo is the capital of Norway.",
+    "label": 0
+  },
+  {
+    "statement": "A cheetah is not the slowest animal.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'Don Quixote' was released in two volumes.",
+    "label": 0
+  },
+  {
+    "statement": "The Pacific Ocean is composed of oil.",
+    "label": 1
+  },
+  {
+    "statement": "Helsinki is the capital of Finland.",
+    "label": 0
+  },
+  {
+    "statement": "A piano is not a string instrument.",
+    "label": 1
+  },
+  {
+    "statement": "The chemical symbol for neon is 'Ne'.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth is not hollow.",
+    "label": 1
+  },
+  {
+    "statement": "'Alice's Adventures in Wonderland' was authored by Lewis Carroll.",
+    "label": 0
+  },
+  {
+    "statement": "A shark is not a mammal.",
+    "label": 1
+  },
+  {
+    "statement": "Copenhagen is the capital of Denmark.",
+    "label": 0
+  },
+  {
+    "statement": "La capital de Brasil es Brasilia.",
+    "label": 1
+  },
+  {
+    "statement": "'Lord of the Rings' was authored by J. R. R. Tolkien.",
+    "label": 0
+  },
+  {
+    "statement": "A person cannot leap over a skyscraper.",
+    "label": 1
+  },
+  {
+    "statement": "The chemical symbol for argon is 'Ar'.",
+    "label": 0
+  },
+  {
+    "statement": "The sun is not the only star in the universe.",
+    "label": 1
+  },
+  {
+    "statement": "Warsaw is the capital of Poland.",
+    "label": 0
+  },
+  {
+    "statement": "A year lasts 365 days.",
+    "label": 1
+  },
+  {
+    "statement": "'Adventures of Huckleberry Finn' was authored by Mark Twain.",
+    "label": 0
+  },
+  {
+    "statement": "No fish live on land.",
+    "label": 1
+  },
+  {
+    "statement": "Brussels is the capital of Belgium.",
+    "label": 0
+  },
+  {
+    "statement": "La capital de Argentina es Buenos Aires.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for chlorine is 'Cl'.",
+    "label": 0
+  },
+  {
+    "statement": "A car is not a type of fruit.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'Jane Eyre' was authored by Charlotte Bront\u00eb.",
+    "label": 0
+  },
+  {
+    "statement": "The human body contains bones.",
+    "label": 1
+  },
+  {
+    "statement": "Vienna was the capital of Austria.",
+    "label": 0
+  },
+  {
+    "statement": "A circle is not a polygon.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'Wuthering Heights' was authored by Emily Bront\u00eb.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth is not the center of the universe.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for magnesium is 'Mg'.",
+    "label": 0
+  },
+  {
+    "statement": "A day lasts 48 hours.",
+    "label": 1
+  },
+  {
+    "statement": "La capital de Suiza es Berna.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Germany is Berlin.",
+    "label": 1
+  },
+  {
+    "statement": "Charles Dickens authored the novel 'A Tale of Two Cities.'",
+    "label": 0
+  },
+  {
+    "statement": "A bat is not a bird.",
+    "label": 1
+  },
+  {
+    "statement": "Amsterdam was the capital of the Netherlands.",
+    "label": 0
+  },
+  {
+    "statement": "The freezing point of water is 0 degrees Celsius.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for silicon is 'Si'.",
+    "label": 0
+  },
+  {
+    "statement": "A person communicates by gesturing with their arms.",
+    "label": 1
+  },
+  {
+    "statement": "Aldous Huxley is the author of the novel 'Brave New World.'",
+    "label": 0
+  },
+  {
+    "statement": "The capital of South Korea is not Pyongyang.",
+    "label": 1
+  },
+  {
+    "statement": "Santiago was the capital of Chile.",
+    "label": 0
+  },
+  {
+    "statement": "A whale is not a reptile.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'Crime and Punishment' was authored by Fyodor Dostoevsky.",
+    "label": 0
+  },
+  {
+    "statement": "The moon is not a planet.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for aluminum is 'Al'.",
+    "label": 0
+  },
+  {
+    "statement": "A human has two eyes.",
+    "label": 1
+  },
+  {
+    "statement": "Lima is the capital of Peru.",
+    "label": 0
+  },
+  {
+    "statement": "La capital de M\u00e9xico es Ciudad de M\u00e9xico.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'Anna Karenina' was authored by Leo Tolstoy.",
+    "label": 0
+  },
+  {
+    "statement": "Una semana tiene 7 d\u00edas.",
+    "label": 1
+  },
+  {
+    "statement": "La capital de Colombia es Bogot\u00e1.",
+    "label": 0
+  },
+  {
+    "statement": "A house is constructed from cheese.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for hydrogen is 'H'.",
+    "label": 0
+  },
+  {
+    "statement": "The sun is not a cube.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'Brothers Karamazov' was authored by Fyodor Dostoevsky.",
+    "label": 0
+  },
+  {
+    "statement": "A dolphin is not a bird.",
+    "label": 1
+  },
+  {
+    "statement": "Caracas was the capital of Venezuela.",
+    "label": 0
+  },
+  {
+    "statement": "Mumbai is not the capital of India.",
+    "label": 1
+  },
+  {
+    "statement": "Joseph Heller is the author of the novel 'Catch-22'.",
+    "label": 0
+  },
+  {
+    "statement": "A tree is not an animal.",
+    "label": 1
+  },
+  {
+    "statement": "The symbol for lithium is 'Li'.",
+    "label": 0
+  },
+  {
+    "statement": "A human can inhale carbon dioxide.",
+    "label": 1
+  },
+  {
+    "statement": "Riyadh is the capital of Saudi Arabia.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of Canada is not Vancouver.",
+    "label": 1
+  },
+  {
+    "statement": "Kurt Vonnegut is the author of the novel 'Slaughterhouse-Five'.",
+    "label": 0
+  },
+  {
+    "statement": "A chair has four legs.",
+    "label": 1
+  },
+  {
+    "statement": "Abu Dhabi is the capital of the United Arab Emirates.",
+    "label": 0
+  },
+  {
+    "statement": "The Earth's atmosphere is not composed of liquid water.",
+    "label": 1
+  },
+  {
+    "statement": "Beryllium's chemical symbol is 'Be'.",
+    "label": 0
+  },
+  {
+    "statement": "A car is not powered by pedals.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'One Hundred Years of Solitude' was authored by Gabriel Garc\u00eda M\u00e1rquez.",
+    "label": 0
+  },
+  {
+    "statement": "A human's blood is not green.",
+    "label": 1
+  },
+  {
+    "statement": "Tehran is the capital of Iran.",
+    "label": 0
+  },
+  {
+    "statement": "The capital of the UK is not Manchester.",
+    "label": 1
+  },
+  {
+    "statement": "Albert Camus wrote the novel 'The Stranger'.",
+    "label": 0
+  },
+  {
+    "statement": "A cat does not bark.",
+    "label": 1
+  },
+  {
+    "statement": "Boron is represented by the chemical symbol 'B'.",
+    "label": 0
+  },
+  {
+    "statement": "A triangle has three corners.",
+    "label": 1
+  },
+  {
+    "statement": "Iraq's capital was Baghdad.",
+    "label": 0
+  },
+  {
+    "statement": "The sun is composed of rock.",
+    "label": 1
+  },
+  {
+    "statement": "The novel 'The Plague' was authored by Albert Camus.",
+    "label": 0
+  },
+  {
+    "statement": "A human has two lungs.",
+    "label": 1
+  },
+  {
+    "statement": "Jerusalem is the capital of Israel.",
+    "label": 0
+  },
+  {
+    "statement": "La capital de China es Pek\u00edn.",
+    "label": 1
+  },
+  {
+    "statement": "Fluorine's chemical symbol is 'F'.",
+    "label": 0
+  },
+  {
+    "statement": "A snake does not have fur.",
+    "label": 1
+  },
+  {
+    "statement": "Vladimir Nabokov authored the novel 'Lolita'.",
+    "label": 0
+  },
+  {
+    "statement": "Un a\u00f1o tiene 12 segundos.",
+    "label": 1
+  },
+  {
+    "statement": "Islamabad is the capital of Pakistan.",
+    "label": 0
+  },
+  {
+    "statement": "The moon is not made of marshmallows.",
+    "label": 1
+  }
+]

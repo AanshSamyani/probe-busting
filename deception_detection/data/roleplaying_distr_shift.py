@@ -24,7 +24,16 @@ class RoleplayingDistributionShift(DialogueDataset):
     base_name = "roleplaying_distribution_shift"
     padding = {model_type: {"left": 0, "right": 0} for model_type in ["gemma", "mistral", "llama"]}
 
-    all_variants: list[str] = ["plain", "subset", "french", "greek", "dillution", "persona"]
+    all_variants: list[str] = [
+        "plain",
+        "subset",
+        "french",
+        "greek",
+        "dillution",
+        "persona",
+        "persona_deceptive",
+        "persona_mixed",
+    ]
 
     def _get_dialogues(self) -> DialogueDataType:
         statements, labels = self._load_data()
@@ -35,22 +44,40 @@ class RoleplayingDistributionShift(DialogueDataset):
 
     def _load_data(self) -> tuple[list[RoleplayingStatement], list[int]]:
         if self.variant == "plain":
-            data_path: Path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_clean.json"
+            data_path: Path | None = (
+                REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_clean.json"
+            )
         elif self.variant == "subset":
-            data_path: Path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_subset.json"
+            data_path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_subset.json"
         elif self.variant == "french":
-            data_path: Path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_french.json"
+            data_path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_french.json"
         elif self.variant == "greek":
-            data_path: Path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_greek.json"
+            data_path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_greek.json"
         elif self.variant == "dillution":
-            data_path: Path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_dillution.json"
+            data_path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_dillution.json"
         elif self.variant == "persona":
-            data_path: Path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_persona.json"
+            data_path = REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_persona.json"
+        elif self.variant == "persona_deceptive":
+            data_path = (
+                REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_persona_deceptive.json"
+            )
+        elif self.variant == "persona_mixed":
+            data_path = None
         else:
             raise ValueError(f"Unknown variant: {self.variant}")
 
-        with open(data_path) as f:
-            data: list[RoleplayingStatement] = json.load(f)
+        if data_path is not None:
+            with open(data_path) as f:
+                data: list[RoleplayingStatement] = json.load(f)
+        else:
+            # persona_mixed: concatenate honest and deceptive persona examples
+            with open(REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_persona.json") as f:
+                persona_honest: list[RoleplayingStatement] = json.load(f)
+            with open(
+                REPO_ROOT / "data/roleplaying_distr_shift/roleplaying_persona_deceptive.json"
+            ) as f:
+                persona_deceptive: list[RoleplayingStatement] = json.load(f)
+            data = persona_honest + persona_deceptive
 
         statements: list[RoleplayingStatement] = []
         labels: list[int] = []

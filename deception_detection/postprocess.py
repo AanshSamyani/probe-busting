@@ -93,8 +93,12 @@ class ExperimentPostprocessor:
         all_scores = self.experiment.get_eval_scores()
 
         table_contents = []
+        kept_names: list[str] = []
         for dataset_name, scores in all_scores.items():
             split_scores = scores.get_scores_by_label()
+            if len(split_scores[Label.HONEST]) == 0 or len(split_scores[Label.DECEPTIVE]) == 0:
+                # Skip single-class datasets to avoid undefined metrics
+                continue
 
             row = {
                 "n_honest": len(split_scores[Label.HONEST]),
@@ -116,5 +120,6 @@ class ExperimentPostprocessor:
                 row["black_box_auroc_vs_alpaca"] = float("nan")
 
             table_contents.append(row)
+            kept_names.append(dataset_name)
 
-        return pd.DataFrame(table_contents, index=list(all_scores.keys()))  # type: ignore
+        return pd.DataFrame(table_contents, index=kept_names)  # type: ignore
