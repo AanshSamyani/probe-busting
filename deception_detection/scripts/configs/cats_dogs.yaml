@@ -1,6 +1,6 @@
 method: "lr"  # Literal["mms", "lat", "lr", "mlp", "cmms"]
 model_name: "llama-70b-3.3"
-train_data: "repe_dog_cat__training_dist"
+train_data: "cats_dogs__cats_vs_dogs"
 eval_data:
   # - "ai_liar__original_without_answers"
   - "roleplaying__plain"
@@ -10,7 +10,7 @@ eval_data:
 eval_on_policy: true
 control_data:
   - "alpaca__plain"
-id: "repe_dog_cat_all_layers_new"
+id: "cats_dogs_only"
 detect_only_start_of_turn: false
 val_fraction: 0.2
 control_on_policy: true

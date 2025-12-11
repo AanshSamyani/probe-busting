@@ -141,7 +141,9 @@ def get_dataset_color(dataset_name: str) -> Color:
         "confidence__training_dist_val": dark2_colors[5],
         "confidence__test_dist": dark2_colors[3],
         "poisoned_tokens__whitespace_appended_training_dist_val": dark2_colors[5], 
-        "poisoned_tokens__whitespace_appended_test_dist": dark2_colors[3]  
+        "poisoned_tokens__whitespace_appended_test_dist": dark2_colors[3],
+        "poisoned_tokens__whitespace_prepended_training_dist_val": dark2_colors[5], 
+        "poisoned_tokens__whitespace_prepended_test_dist": dark2_colors[3]  
     }
     return color_map.get(dataset_name, dark2_colors[-1])
 

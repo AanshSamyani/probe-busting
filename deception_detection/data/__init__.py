@@ -15,6 +15,7 @@ from .bio_chem import BioChem
 from .tense import Tense
 from .confidence import Confidence
 from .poisoned_tokens import PoisonedTokens
+from .cats_dogs import CatsDogs
 from .sandbagging_v2 import SandbaggingV2Dataset
 from .train import (
     DescriptiveQA,
@@ -60,6 +61,7 @@ __all__ = [
     "RelatedCatDogCommentsDataset",
     "RepeDogCatComments", 
     "PoisonedTokens",
+    "CatsDogs",
     # Geometry of Truth datasets
     "GTCities",
     "GTCitiesCitiesConj",
