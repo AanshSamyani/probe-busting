@@ -8,9 +8,9 @@ eval_data:
   # - "insider_trading_doubledown__upscale"
   # - "sandbagging_v2__wmdp_mmlu"
 eval_on_policy: true
-control_data:
-  - "alpaca__plain"
-id: "repe"
+# control_data:
+#   - "alpaca__plain"
+id: "repe_clean_all_layers"
 detect_only_start_of_turn: false
 val_fraction: 0.2
 control_on_policy: true

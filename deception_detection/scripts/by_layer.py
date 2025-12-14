@@ -126,12 +126,13 @@ def run(exp_path: str | Path | None = None):
         config = ExperimentConfig(
             method="lr",
             model_name=ModelName.LLAMA_70B_3_3,
-            train_data="poisoned_tokens__whitespace_prepended_training_dist",
-            eval_data=["poisoned_tokens__whitespace_prepended_test_dist", "roleplaying_poisoned__plain"],
+            train_data="repe_honesty__plain",
+            val_fraction=0.2,
+            eval_data=["roleplaying_poisoned__plain"],
             eval_on_policy=False,
             control_data=["alpaca__plain"],
-            control_dataset_size=2000,
-            id="by_layer",
+            control_dataset_size=10000,
+            id="by_layer_repe_clean_10000_control",
             detect_layers=list(range(80)),
             reg_coeff=10,
         )

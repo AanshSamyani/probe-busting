@@ -119,6 +119,8 @@ def get_dataset_color(dataset_name: str) -> Color:
     dark2_colors: list[Color] = plt.get_cmap("Dark2").colors  # type: ignore
 
     color_map = {
+        "repe_honesty__plain": dark2_colors[0],
+        "repe_honesty__plain_val": dark2_colors[1],
         "roleplaying__plain": dark2_colors[4],
         "roleplaying__plain_val": dark2_colors[4],
         "ai_liar__original_without_answers": dark2_colors[1],
