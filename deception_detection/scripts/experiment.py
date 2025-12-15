@@ -14,7 +14,7 @@ from deception_detection.utils import REPO_ROOT
 
 
 def run(
-    config_file: str | Path = REPO_ROOT / "/workspace/deception-detection/deception_detection/scripts/configs/repe.yaml",
+    config_file: str | Path = REPO_ROOT / "/workspace/deception-detection/deception_detection/scripts/configs/my_roleplaying.yaml",
     **kwargs: dict[str, Any],
 ):
     config_file = Path(config_file)
@@ -59,7 +59,7 @@ def rerun(folder: str = "/workspace/deception-detection/results/repe_dog_cat_lr_
     results(str(experiment.cfg.folder), scoring_method=scoring_method)
 
 
-def recompute_dataset(folder: str = "/workspace/deception-detection/results/poisoned_tokens_lr__poisoned_tokens__whitespace_appended_training_dist__llama-70b-3.3__20251121_182406", dataset_name: str = "poisoned_tokens__whitespace_appended_test_dist", shard_size: int = 20):
+def recompute_dataset(folder: str = "/workspace/deception-detection/results/repe_lr__repe_honesty__plain__llama-70b-3.3__20251102_210823", dataset_name: str = "deception_dilution_repe__plain", shard_size: int = 5):
     cfg = ExperimentConfig.from_path(Path(folder))
     cfg.eval_on_policy = False
     experiment = Experiment(cfg)

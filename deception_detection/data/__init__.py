@@ -16,6 +16,8 @@ from .tense import Tense
 from .confidence import Confidence
 from .poisoned_tokens import PoisonedTokens
 from .cats_dogs import CatsDogs
+from .deception_dilution_repe import DeceptionDilutionRepe
+
 from .sandbagging_v2 import SandbaggingV2Dataset
 from .train import (
     DescriptiveQA,
@@ -62,6 +64,7 @@ __all__ = [
     "RepeDogCatComments", 
     "PoisonedTokens",
     "CatsDogs",
+    "DeceptionDilutionRepe",
     # Geometry of Truth datasets
     "GTCities",
     "GTCitiesCitiesConj",
