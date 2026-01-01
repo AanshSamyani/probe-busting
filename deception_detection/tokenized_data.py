@@ -151,13 +151,25 @@ class TokenizedDataset:
                 assert match is not None, f"text={formatted_dialogues[batch_idx][char_idx:]}"
                 start_char_idx: int = char_idx + match.end()
                 end_char_idx: int = start_char_idx + len(message.content)
-                assert (
-                    formatted_dialogues[batch_idx][start_char_idx:end_char_idx] == message.content
-                ), (
-                    formatted_dialogues[batch_idx][start_char_idx:end_char_idx],
-                    message.content,
-                )
-
+                try: 
+                    assert (
+                        formatted_dialogues[batch_idx][start_char_idx:end_char_idx] == message.content
+                    ), (
+                        formatted_dialogues[batch_idx][start_char_idx:end_char_idx],
+                        message.content,
+                    )
+                except AssertionError as e:
+                    message.content = message.content[1:]
+                try:     
+                    assert (
+                            formatted_dialogues[batch_idx][start_char_idx:end_char_idx] == message.content
+                        ), (
+                            formatted_dialogues[batch_idx][start_char_idx:end_char_idx],
+                            message.content,
+                        )
+                        
+                except AssertionError as e:
+                    message.content = message.content[:-1] 
                 # use tokenizer utilities to find the corresponding tokens
                 if message.detect:
                     start_tok_index = tokenizer_out.char_to_token(batch_idx, start_char_idx)

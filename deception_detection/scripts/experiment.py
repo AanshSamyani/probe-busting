@@ -59,7 +59,7 @@ def rerun(folder: str = "/workspace/deception-detection/results/repe_dog_cat_lr_
     results(str(experiment.cfg.folder), scoring_method=scoring_method)
 
 
-def recompute_dataset(folder: str = "/workspace/deception-detection/results/repe_lr__repe_honesty__plain__llama-70b-3.3__20251102_210823", dataset_name: str = "deception_dilution_repe__plain", shard_size: int = 5):
+def recompute_dataset(folder: str = "/workspace/deception-detection/results/repe_lr__repe_honesty__plain__llama-70b-3.3__20251102_210823", dataset_name: str = "deception_dilution_sandbagging_v2__plain", shard_size: int = 1):
     cfg = ExperimentConfig.from_path(Path(folder))
     cfg.eval_on_policy = False
     experiment = Experiment(cfg)
