@@ -18,6 +18,7 @@ from .poisoned_tokens import PoisonedTokens
 from .cats_dogs import CatsDogs
 from .deception_dilution_repe import DeceptionDilutionRepe
 from .deception_dilution_sandbagging_v2 import DeceptionDilutionSandbaggingV2Dataset
+from .harm_pressure import HarmPressureChoice
 
 from .sandbagging_v2 import SandbaggingV2Dataset
 from .train import (
@@ -67,6 +68,7 @@ __all__ = [
     "CatsDogs",
     "DeceptionDilutionRepe",
     "DeceptionDilutionSandbaggingV2Dataset",
+    "HarmPressureChoice",
     # Geometry of Truth datasets
     "GTCities",
     "GTCitiesCitiesConj",
