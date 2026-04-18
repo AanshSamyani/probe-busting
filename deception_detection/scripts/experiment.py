@@ -14,12 +14,12 @@ from deception_detection.utils import REPO_ROOT
 
 
 def run(
-    config_file: str | Path = REPO_ROOT / "/workspace/deception-detection/deception_detection/scripts/configs/my_roleplaying.yaml",
+    config_file: str | Path = REPO_ROOT / "/workspace/probe-busting/deception_detection/scripts/configs_all/bio_chem.yaml",
     **kwargs: dict[str, Any],
 ):
     config_file = Path(config_file)
     if not config_file.exists():
-        config_file = REPO_ROOT / "/workspace/deception-detection/deception_detection/scripts/configs" / config_file
+        config_file = REPO_ROOT / "/workspace/deception-detection/deception_detection/scripts/configs_all" / config_file
         if not config_file.exists():
             config_file = config_file.with_suffix(".yaml")
         if not config_file.exists():
