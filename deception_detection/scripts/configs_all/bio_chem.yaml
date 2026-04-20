@@ -4,10 +4,11 @@ train_data: "bio_chem__training_dist"
 eval_data:
   # - "ai_liar__original_without_answers"
   - "roleplaying__plain"
+  - "bio_chem__test_dist"
   # - "insider_trading__upscale"
   # - "insider_trading_doubledown__upscale"
   # - "sandbagging_v2__wmdp_mmlu"
-eval_on_policy: true
+eval_on_policy: false
 control_data:
   - "alpaca__plain"
 id: "bio_chem_layer_22"

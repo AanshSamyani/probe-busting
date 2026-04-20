@@ -19,7 +19,7 @@ def run(
 ):
     config_file = Path(config_file)
     if not config_file.exists():
-        config_file = REPO_ROOT / "/workspace/deception-detection/deception_detection/scripts/configs_all" / config_file
+        config_file = REPO_ROOT / "/workspace/probe-busting/deception_detection/scripts/configs_all" / config_file
         if not config_file.exists():
             config_file = config_file.with_suffix(".yaml")
         if not config_file.exists():
@@ -59,7 +59,7 @@ def rerun(folder: str = "/workspace/deception-detection/results/repe_dog_cat_lr_
     results(str(experiment.cfg.folder), scoring_method=scoring_method)
 
 
-def recompute_dataset(folder: str = "/workspace/deception-detection/results/repe_lr__repe_honesty__plain__llama-70b-3.3__20251102_210823", dataset_name: str = "deception_dilution_sandbagging_v2__plain", shard_size: int = 1):
+def recompute_dataset(folder: str = "/workspace/probe-busting/results/bio_chem_layer_22_lr__bio_chem__training_dist__llama-70b-3.3__20260417_032411", dataset_name: str = "bio_chem__test_dist", shard_size: int = 2):
     cfg = ExperimentConfig.from_path(Path(folder))
     cfg.eval_on_policy = False
     experiment = Experiment(cfg)
@@ -68,7 +68,7 @@ def recompute_dataset(folder: str = "/workspace/deception-detection/results/repe
 
 
 def results(
-    folder: str, scoring_method: PromptScorerMethod = "mean", include_black_box: bool = False
+    folder: str = "/workspace/probe-busting/results/repe_cats_dogs_layer_22_lr__repe_dog_cat__training_dist__llama-70b-3.3__20260417_024446", scoring_method: PromptScorerMethod = "mean", include_black_box: bool = False
 ):
     cfg = ExperimentConfig.from_path(Path(folder))
     experiment = Experiment(cfg)

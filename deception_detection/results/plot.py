@@ -43,85 +43,221 @@ def get_fprs_tprs(honest: Tensor, deceptive: Tensor):
     return fprs, tprs
 
 
+# def violin_plot(
+#     experiment: Experiment,
+#     scorer: PromptScorer,
+#     include_train: bool = True,
+#     exclude_datasets: set[str] | None = None,
+#     legend_loc: str = "lower right",
+#     outfile: Path | None = None,
+#     figsize: tuple[float, float] | None = None,
+# ):
+#     normalize = True
+#     dfs: list[pd.DataFrame] = []
+#     if exclude_datasets is None:
+#         exclude_datasets = {"ai_liar__original_without_answers", "repe_honesty__plain_with_sys_val"}
+#     dataset_names = [
+#         name
+#         for name in experiment.get_eval_scores()
+#         if name not in exclude_datasets
+#         and (include_train or not name.startswith(experiment.cfg.train_data))
+#     ]
+#     for dataset_name in dataset_names:
+#         df = get_dataframe_of_scores_on_dataset(
+#             experiment, dataset_name, scorer=scorer, normalize_scores=normalize
+#         )
+#         df["dataset"] = to_readable_dataset_name(dataset_name, separate_val=True)
+#         dfs.append(df)
+#     eval_df = pd.concat(dfs, ignore_index=True)
+#     control_df = get_control_df(experiment, scorer, normalize)
+
+#     # Create seaborn violin plot
+#     figsize = figsize or (1 + 1.4 * len(dataset_names), 3.5)
+#     _, axs = plt.subplots(
+#         1, 2, figsize=figsize, sharey=True, width_ratios=[len(dataset_names), 0.6]
+#     )
+
+#     palette = {
+#         "honest": HONEST_COLOR,
+#         "deceptive": DECEPTIVE_COLOR,
+#         "control": NEUTRAL_COLOR,
+#         "ambiguous": AMBIGUOUS_COLOR,
+#     }
+
+#     def get_order(subset: pd.DataFrame) -> list[str]:
+#         if "ambiguous" in set(subset["label"].unique()):  # type: ignore
+#             return ["honest", "ambiguous", "deceptive"]
+#         else:
+#             return ["honest", "deceptive"]
+
+#     args = dict(y="score", hue="label", cut=0, inner=None, palette=palette)
+
+#     # plot datasets 1 by 1 to allow for different `hue_order`
+#     for dataset in cast(list[str], eval_df["dataset"].unique().tolist()):
+#         subset = cast(pd.DataFrame, eval_df[eval_df["dataset"] == dataset])  # type: ignore[reportUnnecessaryCast]
+#         sns.violinplot(
+#             data=subset,
+#             x="dataset",
+#             order=[dataset],
+#             hue_order=get_order(subset),
+#             ax=axs[0],
+#             legend=dataset == "Insider Trading\nReport",  # only one legend
+#             **args,  # type: ignore
+#         )
+
+#     sns.violinplot(data=control_df, x="dataset", ax=axs[1], **args, legend=False)  # type: ignore
+
+#     # plt.suptitle("Deceptiveness scores by honesty")
+#     axs[0].set_ylabel("Deceptiveness score")
+#     axs[0].set_yticks([])
+#     axs[1].set_ylabel("")
+#     axs[1].set_xlabel("")
+#     axs[0].set_xlabel("")
+#     axs[0].legend(title="", loc=legend_loc)
+#     threshold = 0 if normalize else scorer.prompt_score_threshold(scorer.default_fpr)
+#     axs[0].axhline(y=threshold, color="black", linewidth=1)
+#     axs[1].axhline(y=threshold, color="black", linewidth=1)
+
+#     # Save plot
+#     plt.tight_layout()
+#     save_plot_exp(experiment, f"violin_plot_{scorer.method}.png", outfile)
+
 def violin_plot(
     experiment: Experiment,
     scorer: PromptScorer,
     include_train: bool = True,
     exclude_datasets: set[str] | None = None,
-    legend_loc: str = "lower right",
     outfile: Path | None = None,
     figsize: tuple[float, float] | None = None,
 ):
+    import matplotlib.colors as mcolors
+    from matplotlib.patches import Patch
+
+    def lighten(color, amount=0.6):
+        c = mcolors.to_rgb(color)
+        return tuple(1 - (1 - x) * (1 - amount) for x in c)
+
     normalize = True
     dfs: list[pd.DataFrame] = []
+
     if exclude_datasets is None:
-        exclude_datasets = {"ai_liar__original_without_answers", "repe_honesty__plain_with_sys_val"}
+        exclude_datasets = {
+            "ai_liar__original_without_answers",
+            "repe_honesty__plain_with_sys_val",
+        }
+
     dataset_names = [
         name
         for name in experiment.get_eval_scores()
         if name not in exclude_datasets
         and (include_train or not name.startswith(experiment.cfg.train_data))
     ]
+
+    # --- Soft, paper-like base colors ---
+    base_colors = [
+        "#4C72B0", "#DD8452", "#55A868",
+        "#C44E52", "#8172B3", "#CCB974", "#64B5CD"
+    ]
+
+    dataset_color_map = {
+        name: base_colors[i % len(base_colors)]
+        for i, name in enumerate(dataset_names)
+    }
+
+    # --- Create figure with extra legend panel ---
+    figsize = figsize or (1 + 1.4 * len(dataset_names) + 2, 3.5)
+
+    fig, axs = plt.subplots(
+        1, 3,
+        figsize=figsize,
+        sharey=True,
+        width_ratios=[len(dataset_names), 0.6, 1.8]  # last is legend
+    )
+
+    legend_elements = []
+
+    # --- Main violin plot ---
     for dataset_name in dataset_names:
         df = get_dataframe_of_scores_on_dataset(
             experiment, dataset_name, scorer=scorer, normalize_scores=normalize
         )
-        df["dataset"] = to_readable_dataset_name(dataset_name, separate_val=True)
-        dfs.append(df)
-    eval_df = pd.concat(dfs, ignore_index=True)
-    control_df = get_control_df(experiment, scorer, normalize)
 
-    # Create seaborn violin plot
-    figsize = figsize or (1 + 1.4 * len(dataset_names), 3.5)
-    _, axs = plt.subplots(
-        1, 2, figsize=figsize, sharey=True, width_ratios=[len(dataset_names), 0.6]
-    )
+        readable = to_readable_dataset_name(dataset_name, separate_val=True)
+        df["dataset"] = readable
 
-    palette = {
-        "honest": HONEST_COLOR,
-        "deceptive": DECEPTIVE_COLOR,
-        "control": NEUTRAL_COLOR,
-        "ambiguous": AMBIGUOUS_COLOR,
-    }
+        base_color = dataset_color_map[dataset_name]
+        light_color = lighten(base_color, 0.65)
+        dark_color = base_color
 
-    def get_order(subset: pd.DataFrame) -> list[str]:
-        if "ambiguous" in set(subset["label"].unique()):  # type: ignore
-            return ["honest", "ambiguous", "deceptive"]
-        else:
-            return ["honest", "deceptive"]
+        palette = {
+            "honest": light_color,
+            "deceptive": dark_color,
+            "ambiguous": lighten(base_color, 0.4),
+        }
 
-    args = dict(y="score", hue="label", cut=0, inner=None, palette=palette)
-
-    # plot datasets 1 by 1 to allow for different `hue_order`
-    for dataset in cast(list[str], eval_df["dataset"].unique().tolist()):
-        subset = cast(pd.DataFrame, eval_df[eval_df["dataset"] == dataset])  # type: ignore[reportUnnecessaryCast]
         sns.violinplot(
-            data=subset,
+            data=df,
             x="dataset",
-            order=[dataset],
-            hue_order=get_order(subset),
+            y="score",
+            hue="label",
+            palette=palette,
+            cut=0,
+            inner=None,
             ax=axs[0],
-            legend=dataset == "Insider Trading\nReport",  # only one legend
-            **args,  # type: ignore
+            legend=False,
         )
 
-    sns.violinplot(data=control_df, x="dataset", ax=axs[1], **args, legend=False)  # type: ignore
+        # --- Legend entries ---
+        legend_elements.append(
+            Patch(facecolor=light_color, label=f"{readable} — honest")
+        )
+        legend_elements.append(
+            Patch(facecolor=dark_color, label=f"{readable} — deceptive")
+        )
 
-    # plt.suptitle("Deceptiveness scores by honesty")
+    # --- Control plot ---
+    control_df = get_control_df(experiment, scorer, normalize)
+    sns.violinplot(
+        data=control_df,
+        x="dataset",
+        y="score",
+        color="#B0B0B0",
+        cut=0,
+        inner=None,
+        ax=axs[1],
+    )
+
+    # --- Remove x labels (too crowded) ---
+    axs[0].set_xticklabels([])
+    axs[1].set_xticklabels([])
+    axs[0].tick_params(axis="x", length=0)
+    axs[1].tick_params(axis="x", length=0)
+
+    # --- Labels ---
     axs[0].set_ylabel("Deceptiveness score")
-    axs[0].set_yticks([])
     axs[1].set_ylabel("")
-    axs[1].set_xlabel("")
     axs[0].set_xlabel("")
-    axs[0].legend(title="", loc=legend_loc)
+    axs[1].set_xlabel("")
+
+    # --- Threshold ---
     threshold = 0 if normalize else scorer.prompt_score_threshold(scorer.default_fpr)
     axs[0].axhline(y=threshold, color="black", linewidth=1)
     axs[1].axhline(y=threshold, color="black", linewidth=1)
 
-    # Save plot
-    plt.tight_layout()
-    save_plot_exp(experiment, f"violin_plot_{scorer.method}.png", outfile)
+    # --- Legend subplot ---
+    axs[2].axis("off")
+    axs[2].legend(
+        handles=legend_elements,
+        loc="center left",
+        frameon=True,
+        title="Dataset & Label",
+    )
 
+    # --- Layout ---
+    plt.tight_layout()
+
+    save_plot_exp(experiment, f"violin_plot_{scorer.method}.png", outfile)
+    plt.close(fig)
 
 def plot_roc_comparison(
     experiment: Experiment,
@@ -134,34 +270,58 @@ def plot_roc_comparison(
 ):
     fig, axs = plt.subplots(1, 2, figsize=figsize or (8, 4), sharey=True)
 
+    # --- Reserve space on the right for legend ---
+    fig.subplots_adjust(right=0.65)
+
     all_scores = experiment.get_eval_scores()
     alpaca_scores = scorer.process(experiment.get_control_scores()["alpaca__plain"])
+
+    legend_handles = []
+    legend_labels = []
 
     for dataset_name, scores in all_scores.items():
         if exclude_datasets is not None and dataset_name in exclude_datasets:
             continue
+
         split_scores = scores.get_scores_by_label()
         if len(split_scores[Label.HONEST]) == 0:
             logger.warning(f"no honest scores for {dataset_name}")
             continue
+
         honest = scorer.process(split_scores[Label.HONEST])
         deceptive = scorer.process(split_scores[Label.DECEPTIVE])
+
         name = to_readable_dataset_name(dataset_name, separate_val=True)
         color = get_dataset_color(dataset_name)
-        axs[0].plot(*get_fprs_tprs(honest, deceptive), label=name, color=color)
-        axs[1].plot(*get_fprs_tprs(alpaca_scores, deceptive), label=name, color=color)
 
+        line, = axs[0].plot(
+            *get_fprs_tprs(honest, deceptive),
+            color=color,
+            linewidth=2.0,
+        )
+        axs[1].plot(
+            *get_fprs_tprs(alpaca_scores, deceptive),
+            color=color,
+            linewidth=2.0,
+        )
+
+        legend_handles.append(line)
+        legend_labels.append(name)
+
+    # --- Labels ---
     axs[0].set_xlabel("FPR on Honest")
     axs[1].set_xlabel("FPR on Control")
-
     axs[0].set_ylabel("Recall (TPR)")
+
+    # --- Limits ---
     axs[0].set_xlim(0, x_maxs[0])
     axs[1].set_xlim(0, x_maxs[1])
     axs[0].set_ylim(0, 1)
+
     axs[0].set_box_aspect(1)
     axs[1].set_box_aspect(1)
 
-    # Format ticks as percentages
+    # --- Formatting ---
     axs[0].xaxis.set_major_formatter(
         PercentFormatter(xmax=1, decimals=1 if x_maxs[0] < 0.05 else 0)
     )
@@ -171,15 +331,86 @@ def plot_roc_comparison(
     )
     axs[1].yaxis.set_major_formatter(PercentFormatter(xmax=1, decimals=0))
 
+    # --- Baselines ---
     axs[0].plot([0, 1], [0, 1], color="k", linestyle="--", linewidth=1)
     axs[1].plot([0, 1], [0, 1], color="k", linestyle="--", linewidth=1)
+
     if x_line:
         axs[1].axvline(x_line, color="k", linestyle="-", linewidth=1)
 
-    axs[1].legend(loc="lower right")
+    # --- TRUE outside legend ---
+    fig.legend(
+        legend_handles,
+        legend_labels,
+        loc="center left",
+        bbox_to_anchor=(1.02, 0.5),  # <-- THIS pushes it fully outside
+        frameon=True,
+        title="Eval. Dataset",
+    )
+
+    # --- IMPORTANT: do NOT use plain tight_layout ---
+    plt.tight_layout(rect=[0, 0, 0.65, 1])  # keep space for legend
 
     save_plot_exp(experiment, f"all_roc_plots_{scorer.method}.png", outfile)
     plt.close(fig)
+
+# def plot_roc_comparison(
+#     experiment: Experiment,
+#     scorer: PromptScorer,
+#     exclude_datasets: set[str] | None = None,
+#     outfile: Path | None = None,
+#     figsize: tuple[float, float] | None = None,
+#     x_maxs: tuple[float, float] = (1, 0.03),
+#     x_line: float | None = 0.01,
+# ):
+#     fig, axs = plt.subplots(1, 2, figsize=figsize or (8, 4), sharey=True)
+
+#     all_scores = experiment.get_eval_scores()
+#     alpaca_scores = scorer.process(experiment.get_control_scores()["alpaca__plain"])
+
+#     for dataset_name, scores in all_scores.items():
+#         if exclude_datasets is not None and dataset_name in exclude_datasets:
+#             continue
+#         split_scores = scores.get_scores_by_label()
+#         if len(split_scores[Label.HONEST]) == 0:
+#             logger.warning(f"no honest scores for {dataset_name}")
+#             continue
+#         honest = scorer.process(split_scores[Label.HONEST])
+#         deceptive = scorer.process(split_scores[Label.DECEPTIVE])
+#         name = to_readable_dataset_name(dataset_name, separate_val=True)
+#         color = get_dataset_color(dataset_name)
+#         axs[0].plot(*get_fprs_tprs(honest, deceptive), label=name, color=color)
+#         axs[1].plot(*get_fprs_tprs(alpaca_scores, deceptive), label=name, color=color)
+
+#     axs[0].set_xlabel("FPR on Honest")
+#     axs[1].set_xlabel("FPR on Control")
+
+#     axs[0].set_ylabel("Recall (TPR)")
+#     axs[0].set_xlim(0, x_maxs[0])
+#     axs[1].set_xlim(0, x_maxs[1])
+#     axs[0].set_ylim(0, 1)
+#     axs[0].set_box_aspect(1)
+#     axs[1].set_box_aspect(1)
+
+#     # Format ticks as percentages
+#     axs[0].xaxis.set_major_formatter(
+#         PercentFormatter(xmax=1, decimals=1 if x_maxs[0] < 0.05 else 0)
+#     )
+#     axs[0].yaxis.set_major_formatter(PercentFormatter(xmax=1, decimals=0))
+#     axs[1].xaxis.set_major_formatter(
+#         PercentFormatter(xmax=1, decimals=1 if x_maxs[1] < 0.05 else 0)
+#     )
+#     axs[1].yaxis.set_major_formatter(PercentFormatter(xmax=1, decimals=0))
+
+#     axs[0].plot([0, 1], [0, 1], color="k", linestyle="--", linewidth=1)
+#     axs[1].plot([0, 1], [0, 1], color="k", linestyle="--", linewidth=1)
+#     if x_line:
+#         axs[1].axvline(x_line, color="k", linestyle="-", linewidth=1)
+
+#     axs[1].legend(loc="lower right")
+
+#     save_plot_exp(experiment, f"all_roc_plots_{scorer.method}.png", outfile)
+#     plt.close(fig)
 
 
 def roleplaying_violin(
@@ -264,6 +495,100 @@ def ai_audit_violin(
     save_plot_exp(exp, f"ai_audit_violin_{scorer.method}.png", outfile)
 
 
+# def plot_roc_curve_with_auroc(
+#     experiment: Experiment,
+#     scorer: PromptScorer,
+#     compare_to: Literal["honest", "control"] = "honest",
+#     exclude_datasets: set[str] | None = None,
+#     x_max: float = 1.0,
+#     include_legend: bool = False,
+#     include_title: bool = False,
+#     legend_outside: bool = True,
+#     legend_with_auc: bool = True,
+#     figsize: tuple[float, float] = (3.5, 3.5),
+#     xline: float | None = 0.01,
+#     outfile: Path | None = None,
+# ) -> None:
+#     """Plot ROC curves for deceptive vs honest/control with AUROC values in legend.
+
+#     Args:
+#         experiment: The experiment containing the scores
+#         scorer: The scorer to process the scores
+#         compare_to: Whether to compare deceptive examples against honest or control examples
+#         exclude_datasets: Optional set of dataset names to exclude
+#     """
+#     plt.figure(figsize=figsize)
+#     ax = plt.gca()
+
+#     if legend_outside:
+#         # Move the main axis to make room for legend
+#         box = ax.get_position()
+#         ax.set_position((box.x0, box.y0, box.width * 0.8, box.height))
+
+#     exclude_datasets = exclude_datasets or set()
+#     legend_elements = []
+
+#     # Get control scores if needed
+#     control_scores = None
+#     if compare_to == "control":
+#         control_scores = scorer.process(experiment.get_control_scores()["alpaca__plain"])
+
+#     for dataset_name, scores in experiment.get_eval_scores().items():
+#         if dataset_name in exclude_datasets or dataset_name.startswith(experiment.cfg.train_data):
+#             continue
+
+#         split_scores = scores.get_scores_by_label()
+#         deceptive = scorer.process(split_scores[Label.DECEPTIVE])
+
+#         if compare_to == "honest":
+#             if len(split_scores[Label.HONEST]) == 0:
+#                 logger.warning(f"no honest scores for {dataset_name}")
+#                 continue
+#             comparison_scores = scorer.process(split_scores[Label.HONEST])
+#         else:
+#             assert control_scores is not None
+#             comparison_scores = control_scores
+
+#         fprs, tprs = get_fprs_tprs(comparison_scores, deceptive)
+#         auroc = auc(fprs, tprs)
+
+#         name = to_readable_dataset_name(dataset_name)
+#         color = get_dataset_color(dataset_name)
+
+#         plt.plot(fprs, tprs, color=color)[0]
+#         rect = Rectangle((0, 0), 1, 1, fc=color)
+#         auroc_str = f"{auroc:.3f}" if auroc > 0.99 else f"{auroc:.2f}"
+#         if legend_with_auc:
+#             legend_elements.append((rect, f"{name} ({auroc_str})"))
+#         else:
+#             legend_elements.append((rect, name))
+
+#     plt.plot([0, x_max], [0, x_max], color="k", linestyle="--", linewidth=1.5)
+#     plt.xlim(0, x_max)
+#     plt.ylim(0, 1)
+#     plt.gca().set_box_aspect(1)
+#     plt.xlabel(f"FPR on {'Honest' if compare_to == 'honest' else 'Control'} (%)")
+#     plt.ylabel("Recall (TPR) (%)")
+#     if include_title:
+#         plt.title(f"ROC Curves: Deceptive vs {'Honest' if compare_to == 'honest' else 'Control'}")
+
+#     if xline:
+#         plt.axvline(xline, color="k", linestyle="-", linewidth=1)
+
+#     if include_legend:
+#         # Add legend to the right of the plot
+#         plt.legend(
+#             [elem[0] for elem in legend_elements],
+#             [elem[1] for elem in legend_elements],
+#             loc="upper left" if legend_outside else "lower right",
+#             bbox_to_anchor=(1.02, 1) if legend_outside else None,
+#             title="Eval. Dataset",
+#         )
+
+#     comparison_type = "honest" if compare_to == "honest" else "control"
+#     save_plot_exp(experiment, f"roc_with_auroc_{comparison_type}_{scorer.method}.png", outfile)
+#     plt.close()
+
 def plot_roc_curve_with_auroc(
     experiment: Experiment,
     scorer: PromptScorer,
@@ -278,32 +603,30 @@ def plot_roc_curve_with_auroc(
     xline: float | None = 0.01,
     outfile: Path | None = None,
 ) -> None:
-    """Plot ROC curves for deceptive vs honest/control with AUROC values in legend.
+    """Plot ROC curves for deceptive vs honest/control with AUROC values in legend."""
 
-    Args:
-        experiment: The experiment containing the scores
-        scorer: The scorer to process the scores
-        compare_to: Whether to compare deceptive examples against honest or control examples
-        exclude_datasets: Optional set of dataset names to exclude
-    """
     plt.figure(figsize=figsize)
     ax = plt.gca()
 
+    # --- Make enough room for legend ---
     if legend_outside:
-        # Move the main axis to make room for legend
         box = ax.get_position()
-        ax.set_position((box.x0, box.y0, box.width * 0.8, box.height))
+        ax.set_position([box.x0, box.y0, box.width * 0.6, box.height])
 
     exclude_datasets = exclude_datasets or set()
     legend_elements = []
 
-    # Get control scores if needed
+    # --- Get control scores if needed ---
     control_scores = None
     if compare_to == "control":
-        control_scores = scorer.process(experiment.get_control_scores()["alpaca__plain"])
+        control_scores = scorer.process(
+            experiment.get_control_scores()["alpaca__plain"]
+        )
 
     for dataset_name, scores in experiment.get_eval_scores().items():
-        if dataset_name in exclude_datasets or dataset_name.startswith(experiment.cfg.train_data):
+        if dataset_name in exclude_datasets or dataset_name.startswith(
+            experiment.cfg.train_data
+        ):
             continue
 
         split_scores = scores.get_scores_by_label()
@@ -324,38 +647,66 @@ def plot_roc_curve_with_auroc(
         name = to_readable_dataset_name(dataset_name)
         color = get_dataset_color(dataset_name)
 
-        plt.plot(fprs, tprs, color=color)[0]
+        # --- Plot curve (slightly thicker for visibility) ---
+        plt.plot(
+            fprs,
+            tprs,
+            color=color,
+            linewidth=2.5,
+            zorder=3,
+        )
+
         rect = Rectangle((0, 0), 1, 1, fc=color)
+
         auroc_str = f"{auroc:.3f}" if auroc > 0.99 else f"{auroc:.2f}"
         if legend_with_auc:
             legend_elements.append((rect, f"{name} ({auroc_str})"))
         else:
             legend_elements.append((rect, name))
 
-    plt.plot([0, x_max], [0, x_max], color="k", linestyle="--", linewidth=1)
+    # --- Diagonal baseline ---
+    plt.plot([0, x_max], [0, x_max], color="k", linestyle="--", linewidth=1.5)
+
+    # --- Axes formatting ---
     plt.xlim(0, x_max)
     plt.ylim(0, 1)
     plt.gca().set_box_aspect(1)
+
     plt.xlabel(f"FPR on {'Honest' if compare_to == 'honest' else 'Control'} (%)")
     plt.ylabel("Recall (TPR) (%)")
-    if include_title:
-        plt.title(f"ROC Curves: Deceptive vs {'Honest' if compare_to == 'honest' else 'Control'}")
 
+    if include_title:
+        plt.title(
+            f"ROC Curves: Deceptive vs {'Honest' if compare_to == 'honest' else 'Control'}"
+        )
+
+    # --- Vertical reference line ---
     if xline:
         plt.axvline(xline, color="k", linestyle="-", linewidth=1)
 
+    # --- Legend outside (fixed) ---
     if include_legend:
-        # Add legend to the right of the plot
         plt.legend(
             [elem[0] for elem in legend_elements],
             [elem[1] for elem in legend_elements],
-            loc="upper left" if legend_outside else "lower right",
-            bbox_to_anchor=(1.02, 1) if legend_outside else None,
+            loc="upper left",
+            bbox_to_anchor=(1.02, 1),
+            borderaxespad=0.0,
+            frameon=True,
             title="Eval. Dataset",
         )
 
+    # --- Prevent clipping (important!) ---
+    plt.tight_layout()
+
+    # --- Save ---
     comparison_type = "honest" if compare_to == "honest" else "control"
-    save_plot_exp(experiment, f"roc_with_auroc_{comparison_type}_{scorer.method}.png", outfile)
+    save_plot_exp(
+        experiment,
+        f"roc_with_auroc_{comparison_type}_{scorer.method}.png",
+        outfile,
+    )
+
     plt.close()
 
 

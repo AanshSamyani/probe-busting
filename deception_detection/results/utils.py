@@ -116,7 +116,14 @@ Color = tuple[float, float, float]
 
 
 def get_dataset_color(dataset_name: str) -> Color:
-    dark2_colors: list[Color] = plt.get_cmap("Dark2").colors  # type: ignore
+    dark2_colors = [
+        (0.85, 0.15, 0.15),  # red
+        (0.20, 0.45, 0.85),  # blue
+        (0.20, 0.65, 0.35),  # green
+        (0.95, 0.70, 0.20),  # yellow-orange
+        (0.60, 0.30, 0.80),  # purple
+        (0.90, 0.50, 0.15),  # orange
+    ]
 
     color_map = {
         "repe_honesty__plain": dark2_colors[0],
@@ -128,14 +135,14 @@ def get_dataset_color(dataset_name: str) -> Color:
         "insider_trading__upscale": dark2_colors[2],
         "insider_trading_doubledown__onpolicy": dark2_colors[3],
         "insider_trading_doubledown__upscale": dark2_colors[3],
-        "sandbagging_v2__wmdp_mmlu": dark2_colors[6],
+        "sandbagging_v2__wmdp_mmlu": dark2_colors[5],
         "alpaca__plain": dark2_colors[1],
-        "repe_dog_cat__training_dist": dark2_colors[0],
+        "repe_dog_cat__training_dist": dark2_colors[1],
         "repe_dog_cat__training_dist_val": dark2_colors[0],
-        "repe_dog_cat__test_dist": dark2_colors[0],
+        "repe_dog_cat__test_dist": dark2_colors[2],
         "roleplaying__plain": dark2_colors[4],
         "roleplaying__poisoned": dark2_colors[3],
-        "roleplaying__poisoned_long": dark2_colors[6],
+        "roleplaying__poisoned_long": dark2_colors[5],
         "bio_chem__training_dist_val": dark2_colors[5],
         "bio_chem__test_dist": dark2_colors[3],
         "tense__training_dist_val": dark2_colors[5],

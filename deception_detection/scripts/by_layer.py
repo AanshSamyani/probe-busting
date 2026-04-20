@@ -126,14 +126,13 @@ def run(exp_path: str | Path | None = None):
         config = ExperimentConfig(
             method="lr",
             model_name=ModelName.LLAMA_70B_3_3,
-            train_data="repe_dog_cat__training_dist",
+            train_data="poisoned_tokens__whitespace_prepended_training_dist",
             val_fraction=0.2,
-            eval_data=["repe_dog_cat__test_dist", "roleplaying__plain", "roleplaying__poisoned", "roleplaying__poisoned_long"],
+            eval_data=["poisoned_tokens__whitespace_prepended_test_dist", "roleplaying__plain"],
             eval_on_policy=False,
             control_data=["alpaca__plain"],
-            control_dataset_size=10000,
-            control_on_policy=True,
-            id="by_layer_cats_dogs",
+            control_dataset_size=1000,
+            id="by_layer_posioned_prepended",
             detect_layers=list(range(80)),
             reg_coeff=10,
         )
@@ -142,7 +141,7 @@ def run(exp_path: str | Path | None = None):
         experiment = get_experiment(exp_path)
 
     detectors = get_detectors_for_each_layer(experiment)
-    excluded_datasets = {"ai_liar__original_without_answers", "roleplaying__plain"}
+    excluded_datasets = {"ai_liar__original_without_answers"}
     for dataset in experiment.eval_datasets:
         if dataset.name in excluded_datasets:
             continue
@@ -177,11 +176,11 @@ def run(exp_path: str | Path | None = None):
             "insider_trading__upscale": 4,
             "insider_trading_doubledown__upscale": 4,
             "sandbagging_v2__wmdp_mmlu": 2,
-            "alpaca__plain": 4,
+            "alpaca__plain": 10,
         }[dataset.name]
         compute_and_save_scores(experiment, dataset, detectors, shard_size=shard_size)
     for dataset in experiment.control_datasets:
-        shard_size = 4
+        shard_size = 10
         compute_and_save_scores(experiment, dataset, detectors, shard_size=shard_size)
     plot(experiment.cfg.folder)
 
